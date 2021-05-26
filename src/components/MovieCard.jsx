@@ -1,2 +1,31 @@
-// Crie um componente que represente um cartão de filme. <MovieCard /> deve receber uma prop movie. Essa prop será um objeto, contendo as propriedades, title, subtitle, storyline, imagePath e rating.
+import React, { Component } from 'react';
+import Rating from './Rating';
+import PropTypes from 'prop-types';
 
+class MovieCard extends Component {
+  render() {
+    const { title, subtitle, storyline, rating, imagePath } = this.props.movie;
+
+    return (
+      <div>
+        <h4> {title} </h4>
+        <h5> {subtitle} </h5>
+        <p> {storyline} </p>
+        <Rating rating={ rating } />
+        <img src={imagePath} alt={`${title} thumbnail`} />
+      </div>
+    );
+  }
+}
+
+MovieCard.propTypes = {
+  movie: PropTypes.exact({
+    title: PropTypes.string.isRequired,
+    subtitle: PropTypes.string.isRequired,
+    storyline: PropTypes.string.isRequired,
+    rating: PropTypes.number.isRequired,
+    imagePath: PropTypes.string.isRequired,
+  }).isRequired,
+};
+
+export default MovieCard;
