@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class Rating extends Component {
   render() {
-    const { rating } = this.prop.movie;
+    const { movies } = this.prop;
+    const { rating } = movies;
     return (
       <h1>
         { rating }
@@ -12,3 +14,15 @@ class Rating extends Component {
 }
 
 export default Rating;
+
+Rating.propTypes = {
+  movies: PropTypes.arrayOf(
+    PropTypes.shape({
+      rating: PropTypes.string,
+    }),
+  ),
+};
+
+Rating.defaultProps = {
+  movies: {},
+};
