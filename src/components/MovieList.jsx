@@ -8,8 +8,8 @@ class MovieList extends Component {
 
     return (
       <ul>
-        { movies.map((movieData) =>
-          <MovieCard movie={ movieData } key={ movieData.title } />) }
+        { movies.map((movieData) => (
+          <MovieCard movie={ movieData } key={ movieData.title } />)) }
       </ul>
     );
   }
@@ -23,6 +23,6 @@ MovieList.propTypes = {
     imagePath: PropTypes.string.isRequired,
     rating: PropTypes.number.isRequired,
   })).isRequired,
-}
+};
 
 export default MovieList;
