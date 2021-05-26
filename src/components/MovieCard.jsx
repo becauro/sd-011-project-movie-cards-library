@@ -6,7 +6,10 @@ export class MovieCard extends Component {
 
     return (
       <li>
-        {[title, subtitle, storyline, imagePath, rating]}
+        <h4>{title}</h4>
+        <h5>{subtitle}</h5>
+        <img src={imagePath} alt={`Cover image for the movie ${title}`} />
+        <p>{storyline}</p>
       </li>
     )
   }
