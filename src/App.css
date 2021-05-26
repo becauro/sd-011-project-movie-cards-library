@@ -1,19 +1,23 @@
 body {
-  background-color: whitesmoke;
+  background-color: purple;
   box-sizing: border-box;
   font-size: 16px;
 }
 
+.header {
+  background-color: green;
+}
+
 .movie-card-header {
   align-items: center;
-  background-color: #343a40;
+  background-color: gold;
   display: flex;
   height: 100px;
   justify-content: center;
 }
 
 .page-title {
-  color: #f8f9fa;
+  color: black;
   font-size: 28px;
   font-weight: 500;
   text-align: center;
@@ -26,11 +30,11 @@ body {
 }
 
 .movie-card {
-  background-color: white;
+  background-color: black;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 3px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   height: 450px;
   margin: 5px;
   overflow: hidden;
@@ -48,25 +52,27 @@ body {
 }
 
 .movie-card-title {
+  color: purple;
   font-size: 24px;
   font-weight: 500;
   margin: 0 0 12px;
 }
 
 .movie-card-subtitle {
-  color: #6c757d;
+  color: gold;
   font-size: 16px;
   font-weight: 500;
   margin: 0 0 8px;
 }
 
 .movie-card-storyline {
+  color: purple;
   font-size: 14px;
   text-align: justify;
 }
 
 .rating {
-  background-color: #007bff;
+  background-color: gold;
   border-radius: 25px;
   color: white;
   font-size: 16px;
