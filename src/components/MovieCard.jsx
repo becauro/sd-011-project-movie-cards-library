@@ -1,12 +1,9 @@
-
+import React from 'react';
 
 class MovieCards extends React.Component {
   render() {
-    // const = this.props.movies;
-    const movie = this.props.data
-    
-
-    })
-    return ();
-  }
-}
+    const cardData = this.props.movie.data;
+    return (<div></div>);
+  };
+};
+export default MovieCards;

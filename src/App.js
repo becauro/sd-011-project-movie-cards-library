@@ -11,9 +11,14 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <MovieList movies={data} />
+      <MovieList movies={data} title={data[0].title} xablau='fala mano'/>
     </div>
   );
 }
 
 export default App;
+
+
+
+
+
