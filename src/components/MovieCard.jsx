@@ -8,6 +8,7 @@ export class MovieCard extends Component {
     return (
       <div>
         <img src={ imagePath } alt="movie" />
+        <h4>{title}</h4>
       </div>
     );
   }
