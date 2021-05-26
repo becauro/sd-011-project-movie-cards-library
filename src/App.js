@@ -7,7 +7,9 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <MovieList />
+      <ol>
+      <MovieList movie="Alo"/>
+      </ol>
       Hora de codar! 🚀✍️👨‍💻👩‍💻💪
     </div>
   );
