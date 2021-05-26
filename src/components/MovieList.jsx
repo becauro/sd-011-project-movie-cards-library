@@ -19,4 +19,8 @@ MovieList.propTypes = {
   movies: PropTypes.arrayOf(PropTypes.object),
 };
 
+MovieList.defaultProps = {
+  movies: [{}],
+}
+
 export default MovieList;
