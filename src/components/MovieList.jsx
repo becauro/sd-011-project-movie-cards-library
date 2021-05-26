@@ -7,7 +7,7 @@ class MovieList extends React.Component {
     const { movies } = this.props; // Jean me ajudou a corrigir o lint e onde deveria ser colocado o map.
 
     return (
-      <div>
+      <div className="movie-list">
         {movies.map((movie) => <MovieCard movie={ movie } key={ movie.title } />)}
       </div>
     );
