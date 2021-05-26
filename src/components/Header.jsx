@@ -1,16 +1,12 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import React, { Component } from "react";
 
 export default class Header extends Component {
-    static propTypes = {
-        prop: PropTypes
-    }
-
-    render() {
-        return (
-            <div>
-                <p>Hello</p>
-            </div>
-        )
-    }
+    
+  render() {
+    return (
+      <div>
+        <p></p>
+      </div>
+    );
+  }
 }
