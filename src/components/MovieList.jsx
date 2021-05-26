@@ -17,4 +17,8 @@ MovieList.propTypes = {
   movies: propTypes.arrayOf(propTypes.object.isRequired),
 };
 
+MovieList.defaultProps = {
+  movies: ['not found']
+}
+
 export default MovieList;

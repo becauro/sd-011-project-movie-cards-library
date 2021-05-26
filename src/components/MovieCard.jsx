@@ -32,7 +32,7 @@ MovieCard.defaultProps = {
     subtitle: 'not found',
     storyline: 'not found',
     imagePath: 'not found',
-  }
-}
+  },
+};
 
 export default MovieCard;
