@@ -21,4 +21,3 @@ Rating.propTypes = {
 Rating.defaultProps = {
   rating: 0,
 };
-
