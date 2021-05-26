@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 import MovieCard from './MovieCard';
 
 class MovieList extends React.Component {
@@ -7,7 +7,8 @@ class MovieList extends React.Component {
     const { movies } = this.props;
     return (
       <div>
-        {movies.map((element) => <MovieCard key={ element.title } />)}
+        {movies
+          .map((movie) => <MovieCard key={ movie.title } movie={ movie } />)}
       </div>
     );
   }
@@ -15,12 +16,12 @@ class MovieList extends React.Component {
 
 MovieList.propTypes = {
   movies: propTypes.shape({
-    title: PropTypes.string.isRequired,
-    subtitle: PropTypes.string.isRequired,
-    storyline: PropTypes.string.isRequired,
-    imagePath: PropTypes.string.isRequired,
-    rating: PropTypes.number.isRequired,
-    map: PropTypes.string,
+    title: propTypes.string.isRequired,
+    subtitle: propTypes.string.isRequired,
+    storyline: propTypes.string.isRequired,
+    imagePath: propTypes.string.isRequired,
+    rating: propTypes.number.isRequired,
+    map: propTypes.string,
   }).isRequired,
 };
 
