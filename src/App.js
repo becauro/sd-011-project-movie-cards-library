@@ -7,6 +7,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <MovieList />
       Hora de codar! 🚀✍️👨‍💻👩‍💻💪
     </div>
   );
