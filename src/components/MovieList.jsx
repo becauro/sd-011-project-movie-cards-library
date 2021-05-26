@@ -1,6 +1,8 @@
 import React from 'react';
+import Data from '../data'
+import MovieCard from './MovieCard'
 
-export class MovieList extends React.Component {
+class MovieList extends React.Component {
   render() { 
     return (
       <MovieList />
