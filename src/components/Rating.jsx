@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 function Rating({ rating }) {
   return (
     <div className="rating">
-      <p>{rating}</p>
+      <p className="movie-card-rating">{rating}</p>
     </div>
   );
 }
