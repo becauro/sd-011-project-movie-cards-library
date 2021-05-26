@@ -38,7 +38,7 @@ describe('11 - Crie um componente `<Rating />`', () => {
 describe('12 - Renderize a nota de um filme dentro de `Rating`', () => {
   let wrapper;
   it('Renderize a nota de um filme dentro de `Rating`', () => {
-    wrapper = shallow(<Rating rating={3} />);
+    wrapper = shallow(<Rating rating={ 3 } />);
     expect(wrapper.find('.rating').text()).toEqual('3');
   });
 });
@@ -47,7 +47,7 @@ describe('13 - Renderize o componente `<Rating />` dentro de `<MovieCard />`', (
   let wrapper;
   const movie = movies[0];
   it('Renderize o componente `<Rating />` dentro de `<MovieCard />`', () => {
-    wrapper = shallow(<MovieCard movie={movie} />);
+    wrapper = shallow(<MovieCard movie={ movie } />);
     expect(wrapper.find('Rating').length).toEqual(1);
   });
 });
@@ -56,7 +56,7 @@ describe('14 - Passe como prop para o componente `<Rating/>` o atributo `rating`
   let wrapper;
   const movie = movies[0];
   it('Passe como prop para o componente `<Rating />` o atributo `rating`', () => {
-    wrapper = mount(<MovieCard movie={movie} />);
+    wrapper = mount(<MovieCard movie={ movie } />);
     const starRating = wrapper.find(Rating);
     expect(starRating.props().rating).toEqual(rating);
   });
