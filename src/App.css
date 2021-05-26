@@ -81,3 +81,8 @@ body {
   justify-content: flex-end;
   padding: 12px 20px;
 }
+
+.ratings {
+  margin: 0 auto;
+  align-self: center;
+}
