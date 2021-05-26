@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 export class Headers extends Component {
   render() {
     return (
-      <header>
+      <header className="Header">
         <h1>Movie Cards Library</h1>
       </header>
     );

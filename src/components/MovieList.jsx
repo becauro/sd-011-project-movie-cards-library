@@ -7,7 +7,7 @@ export class MovieLists extends Component {
   render() {
     const { movies } = this.props;
     return (
-      <div>
+      <div className="MovieList">
         { movies.map((movie) => (
           <MovieCard key={ movie.title } movies={ movie } />
         ))}
@@ -17,11 +17,7 @@ export class MovieLists extends Component {
 }
 
 MovieLists.propTypes = {
-  movies: PropTypes.arrayOf(PropTypes.object),
-};
-
-MovieLists.defaultProps = {
-  movies: [],
+  movies: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default MovieLists;

@@ -5,22 +5,22 @@ import Rating from './Rating';
 
 export class MovieCards extends Component {
   render() {
-    const { movies } = this.props;
-    const { title, subtitle, storyline, imagePath, rating } = movies;
+    const { movie } = this.props;
+    const { title, subtitle, storyline, imagePath, rating } = movie;
     return (
-      <>
+      <div>
         <img src={ imagePath } alt={ title } />
         <h4>{ title }</h4>
         <h5>{ subtitle }</h5>
         <p>{ storyline }</p>
         <Rating rating={ rating } />
-      </>
+      </div>
     );
   }
 }
 
 MovieCards.propTypes = {
-  movies: PropTypes.objectOf({
+  movie: PropTypes.objectOf({
     title: PropTypes.string,
     subtitle: PropTypes.string,
     storyline: PropTypes.string,
