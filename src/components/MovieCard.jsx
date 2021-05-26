@@ -5,7 +5,6 @@ import Rating from './Rating';
 export class MovieCards extends Component {
   render() {
     const { movie } = this.props;
-    console.log(movie);
     const { title, subtitle, storyline, imagePath, rating } = movie;
     return (
       <div>
