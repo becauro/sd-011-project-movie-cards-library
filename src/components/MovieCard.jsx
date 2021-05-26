@@ -26,8 +26,8 @@ MovieCard.propTypes = {
   }),
 };
 
-MovieCard.defaultTypes = {
+MovieCard.defaultProps = {
   movie: {},
-}
+};
 
 export default MovieCard;
