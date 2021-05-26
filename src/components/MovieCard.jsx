@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Rating from './Rating';
 
-export class MovieCards extends Component {
+class MovieCard extends Component {
   render() {
     const { movie } = this.props;
     const { title, subtitle, storyline, imagePath, rating } = movie;
@@ -18,8 +18,8 @@ export class MovieCards extends Component {
   }
 }
 
-MovieCards.propTypes = {
-  movie: PropTypes.objectOf({
+MovieCard.propTypes = {
+  movie: PropTypes.shape({
     title: PropTypes.string.isRequired,
     subtitle: PropTypes.string.isRequired,
     storyline: PropTypes.string.isRequired,
@@ -28,4 +28,4 @@ MovieCards.propTypes = {
   }).isRequired,
 };
 
-export default MovieCards;
+export default MovieCard;

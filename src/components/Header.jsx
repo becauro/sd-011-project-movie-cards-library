@@ -1,7 +1,7 @@
 // implement Header component here
 import React from 'react';
 
-export class Headers extends React.Component {
+class Header extends React.Component {
   render() {
     return (
       <header className="Header">
@@ -11,4 +11,4 @@ export class Headers extends React.Component {
   }
 }
 
-export default Headers;
+export default Header;

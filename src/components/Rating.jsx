@@ -2,24 +2,24 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-export class Ratings extends Component {
+class Rating extends Component {
   render() {
     const { rating } = this.props;
     return (
       <div>
         <span>Rating: </span>
-        <span>{ rating }</span>
+        <span className="rating">{ rating }</span>
       </div>
     );
   }
 }
 
-Ratings.propTypes = {
+Rating.propTypes = {
   rating: PropTypes.number,
 };
 
-Ratings.defaultProps = {
+Rating.defaultProps = {
   rating: 0,
 };
 
-export default Ratings;
+export default Rating;
