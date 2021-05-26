@@ -19,23 +19,14 @@ class MovieCard extends Component {
 }
 
 MovieCard.propTypes = {
+  movie: propTypes.isRequired,
   movie: propTypes.shape({
-    title: propTypes.string,
-    subtitle: propTypes.string,
-    storyline: propTypes.string,
-    imagePath: propTypes.string,
-    rating: propTypes.number,
+    title: propTypes.string.isRequired,
+    subtitle: propTypes.string.isRequired,
+    storyline: propTypes.string.isRequired,
+    imagePath: propTypes.string.isRequired,
+    rating: propTypes.number.isRequired,
   }),
-};
-
-MovieCard.defaultProps = {
-  movie: {
-    title: 'not found',
-    subtitle: 'not found',
-    storyline: 'not found',
-    imagePath: 'not found',
-    rating: 0,
-  },
 };
 
 export default MovieCard;

@@ -14,11 +14,8 @@ class MovieList extends Component {
 }
 
 MovieList.propTypes = {
+  movies: propTypes.isRequired,
   movies: propTypes.arrayOf(propTypes.object.isRequired),
-};
-
-MovieList.defaultProps = {
-  movies: ['not found'],
 };
 
 export default MovieList;
