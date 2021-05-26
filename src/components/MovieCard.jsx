@@ -8,6 +8,7 @@ class MovieCard extends Component {
 
     return (
       <div>
+        <img src={ imagePath } alt={ `${title} thumbnail` } />
         <h4>
           {title}
         </h4>
@@ -18,7 +19,6 @@ class MovieCard extends Component {
           {storyline}
         </p>
         <Rating rating={ rating } />
-        <img src={ imagePath } alt={ `${title} thumbnail` } />
       </div>
     );
   }
