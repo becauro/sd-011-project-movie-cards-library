@@ -5,8 +5,8 @@ import Rating from './Rating';
 
 export class MovieCards extends Component {
   render() {
-    const { movie } = this.props;
-    const { title, subtitle, storyline, imagePath, rating } = movie;
+    const { movies } = this.props;
+    const { title, subtitle, storyline, imagePath, rating } = movies;
     return (
       <div>
         <img src={ imagePath } alt={ title } />
@@ -19,14 +19,14 @@ export class MovieCards extends Component {
   }
 }
 
-MovieCards.propTypes = {
-  movie: PropTypes.objectOf({
-    title: PropTypes.string,
-    subtitle: PropTypes.string,
-    storyline: PropTypes.string,
-    imagePath: PropTypes.string,
-    rating: PropTypes.number,
-  }).isRequired,
-};
+// MovieCards.propTypes = {
+//   movies: PropTypes.objectOf({
+//     title: PropTypes.string.isRequired,
+//     subtitle: PropTypes.string.isRequired,
+//     storyline: PropTypes.string.isRequired,
+//     imagePath: PropTypes.string.isRequired,
+//     rating: PropTypes.number.isRequired,
+//   }).isRequired,
+// };
 
 export default MovieCards;

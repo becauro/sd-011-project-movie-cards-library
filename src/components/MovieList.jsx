@@ -8,16 +8,16 @@ export class MovieLists extends Component {
     const { movies } = this.props;
     return (
       <div className="MovieList">
-        { movies.map((movie) => (
-          <MovieCard key={ movie.title } movies={ movie } />
+        { movies.map((element) => (
+          <MovieCard key={ element.title } movies={ element } />
         ))}
       </div>
     );
   }
 }
 
-MovieLists.propTypes = {
-  movies: PropTypes.arrayOf(PropTypes.object).isRequired,
-};
+// MovieLists.propTypes = {
+//   movies: PropTypes.arrayOf(PropTypes.object).isRequired,
+// };
 
 export default MovieLists;
