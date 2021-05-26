@@ -4,6 +4,16 @@ body {
   font-size: 16px;
 }
 
+.header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: darkslategrey;
+  height: auto;
+  padding: 8px 0;
+}
+
 .movie-card-header {
   align-items: center;
   background-color: #343a40;
