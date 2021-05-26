@@ -5,7 +5,7 @@ import data from '../data';
 class MovieList extends React.Component {
   render() {
     return this.props.movies.map((movie) => (
-      <MovieCard movie={movie} key={movie.title} />
+      <MovieCard movie={ movie } key={ movie.title } />
     ));
   }
 }
