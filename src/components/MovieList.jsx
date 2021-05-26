@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+
 import MovieCard from './MovieCard';
 
 class MovieList extends Component {
@@ -25,8 +26,7 @@ MovieList.propTypes = {
       imagePath: PropTypes.string,
       rating: PropTypes.number,
     }),
-  )
-};
+  )};
 
 MovieList.defaultProps = {
   movies: [],
