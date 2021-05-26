@@ -3,17 +3,17 @@ import PropTypes from 'prop-types';
 
 class MovieCard extends Component {
   render() {
-    const movie = this.props.movie;
+    const { movie } = this.props.movie;
     return ( 
       <div>
-
+        { movie };
       </div>
     );
   }
-}
+};
 
 MovieCard.PropTypes = {
-  movie: string.required,
-}
+  movie: PropTypes.string.isRequired,
+};
 
 export default MovieCard;
