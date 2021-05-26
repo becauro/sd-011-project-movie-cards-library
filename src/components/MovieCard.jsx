@@ -22,7 +22,7 @@ class MovieCard extends React.Component {
 export default MovieCard;
 
 MovieCard.propTypes = {
-  movie: PropTypes.shape({
+  movie: propTypes.shape({
     title: propTypes.string,
     subtitle: propTypes.string,
     storyline: propTypes.string,
