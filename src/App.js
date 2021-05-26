@@ -1,5 +1,5 @@
 import React from 'react';
-import Data from './data';
+import data from './data';
 import Header from './components/Header';
 import MovieList from './components/MovieList';
 import './App.css';
@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <MovieList movies={Data}/>
+      <MovieList movies={ data }/>
     </div>
   );
 }
