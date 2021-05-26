@@ -5,12 +5,12 @@ body {
 }
 
 .header {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-evenly;
   align-items: center;
   background-color: darkslategrey;
+  display: flex;
+  flex-flow: row nowrap;
   height: auto;
+  justify-content: space-evenly;
   padding: 8px 0;
 }
 
