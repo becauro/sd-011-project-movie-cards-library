@@ -8,9 +8,8 @@ class Header extends Component {
           <h1>Movie Cards Library</h1>
         </header>
       </div>
-    )
+    );
   }
 }
 
-
-export default Header
+export default Header;
