@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <Header />
       <ol>
-        <MovieList movie="Alo" />
+        <MovieList />
       </ol>
       Hora de codar! 🚀✍️👨‍💻👩‍💻💪
     </div>

@@ -3,15 +3,15 @@ import React from 'react';
 
 class MovieList extends React.Component {
   render() {
-    const { movie } = this.props;
+    // const { movie } = this.props;
     return (
-      <li>{movie}</li>
+      <li></li>
     );
   }
 }
 
-MovieList.protoType = {
-    movie: PropTypes.string,
-};
+// MovieList.protoType = {
+//   movie: PropTypes.string,
+// };
 
 export default MovieList;
