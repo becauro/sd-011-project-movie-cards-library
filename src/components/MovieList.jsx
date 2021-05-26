@@ -1,4 +1,4 @@
-// implement MovieList component here
+// implement MovieList component heres
 import React, { Component } from 'react';
 import MovieCard from './MovieCard';
 
