@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 class MovieList extends React.Component {
   render() {
     const { movies } = this.props;
-    return <ul>{movies}</ul>;
+    return <ul { ...movies } />;
   }
 }
 MovieList.propTypes = {
