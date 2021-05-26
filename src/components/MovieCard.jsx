@@ -24,6 +24,7 @@ class MovieCard extends React.Component {
   }
 }
 
+// Shape: https://dev.to/cesareferrari/how-to-specify-the-shape-of-an-object-with-proptypes-3c56
 MovieCard.propTypes = {
   movie: propTypes.shape({
     title: propTypes.string,

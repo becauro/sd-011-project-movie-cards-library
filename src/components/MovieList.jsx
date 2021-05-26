@@ -14,6 +14,7 @@ class MovieList extends React.Component {
   }
 }
 
+// PropTypes: instance validation: https://blog.bitsrc.io/understanding-react-proptypes-type-checking-in-react-9648a62ce12e
 MovieList.propTypes = {
   movies: propTypes.instanceOf(Array).isRequired,
 };
