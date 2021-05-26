@@ -6,7 +6,7 @@ class MovieCard extends Component {
     const { movie } = this.props;
     return (
       <div>
-        { movie }
+        { movie.title }
       </div>
     );
   }
