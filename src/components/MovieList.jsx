@@ -1,6 +1,6 @@
 import React from 'react';
-import MovieCard from './MovieCard';
 import PropTypes from 'prop-types';
+import MovieCard from './MovieCard';
 
 class MovieList extends React.Component {
   render() {
@@ -8,7 +8,7 @@ class MovieList extends React.Component {
 
     return (
       <div>
-        { movies.map((card, index) => (<MovieCard movie={ card } key={ index } />)) }
+        { movies.map((card) => (<MovieCard movie={ card } key={ movie.title } />)) }
       </div>
     );
   }
