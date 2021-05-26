@@ -80,14 +80,14 @@ body {
 }
 
 .info-container h4 {
-  font-size: 40px;
   color: #252525;
+  font-size: 40px;
   padding-top: 10px;
 }
 
 .info-container h5 {
-  font-size: 30px;
   color: #252525;
+  font-size: 30px;
   padding-top: 10px;
 }
 
@@ -105,8 +105,8 @@ body {
 
 .container-film {
   display: flex;
-  text-align: center;
   flex-direction: row;
+  text-align: center;
 }
 
 .movie-card-rating {
