@@ -18,7 +18,7 @@ MovieList.propTypes = {
 };
 
 MovieList.defaultProps = {
-  movies: ['not found']
-}
+  movies: ['not found'],
+};
 
 export default MovieList;
