@@ -1,5 +1,6 @@
 import React from 'react';
 import Rating from './Rating';
+import PropTypes from 'prop-types';
 
 class MovieCard extends React.Component {
   render() {
@@ -17,6 +18,8 @@ class MovieCard extends React.Component {
   }
 }
 
+export default MovieCard;
+
 MovieCard.propTypes = {
   movie: PropTypes.arrayOf(
     PropTypes.shape({
@@ -33,5 +36,3 @@ MovieCard.propTypes = {
 MovieCard.defaultProps = {
   movie: {},
 };
-
-export default MovieCard;
