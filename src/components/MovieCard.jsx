@@ -4,7 +4,7 @@ import propTypes from 'prop-types';
 class MovieCard extends Component {
   render() {
     const { movie } = this.props;
-    const { title, subtitle, storyline, imagePath} = movie;
+    const { title, subtitle, storyline, imagePath } = movie;
     return (
       <div>
         <img src={ imagePath } alt={ title } />
@@ -25,5 +25,14 @@ MovieCard.propTypes = {
     // rating: propTypes.number,
   }),
 };
+
+MovieCard.defaultProps = {
+  movie: {
+    title: 'not found',
+    subtitle: 'not found',
+    storyline: 'not found',
+    imagePath: 'not found',
+  }
+}
 
 export default MovieCard;
