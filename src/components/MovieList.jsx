@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import MovieCard from './MovieCard'
+import MovieCard from './MovieCard';
 
 class MovieList extends React.Component {
-  render() { 
+  render () { 
     const [movies] = this.props;
     return (
       <div>
@@ -11,7 +11,7 @@ class MovieList extends React.Component {
       </div>
     );
   }
-}
+};
 // Ajuda do Luiz na sala "A"
 
 MovieList.PropTypes = {
@@ -23,7 +23,7 @@ MovieList.PropTypes = {
       rating: PropTypes.number,
       imagePath: PropTypes.string,
     }),
-  ).isRequired
-}
+  ).isRequired,
+};
 
 export default MovieList;
