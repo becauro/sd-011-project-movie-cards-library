@@ -5,16 +5,16 @@ import MovieList from './components/MovieList';
 import movies from './data';
 
 function App() {
-	return (
-		<div className='App'>
-			<Header />
-			<body>
-				<ul className='movie-list'>
-					<MovieList movies={ movies } />
-				</ul>
-			</body>
-		</div>
-	);
+  return (
+    <div className="App">
+      <Header />
+      <body>
+        <ul className="movie-list">
+          <MovieList movies={ movies } />
+        </ul>
+      </body>
+    </div>
+  );
 }
 
 export default App;
