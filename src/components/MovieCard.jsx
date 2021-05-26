@@ -3,34 +3,29 @@ import PropTypes from 'prop-types';
 
 class MovieCard extends React.Component {
   render() {
-    // const { movies } = this.props;
-    // const { title, subtitle, storyline, rating, imagePath } = movies;
-
-    const { movies: { title, subtitle, storyline, rating, imagePath } } = this.props;
+    const { movie: { title, subtitle, storyline, imagePath } } = this.props;
     return (
-      <div>
-        <img src={ imagePath } alt={ title } />
+      <section>
+        <img
+          className="image-card"
+          src={ imagePath }
+          alt={ title }
+        />
         <div>
-          <h4>
-            { title }
-          </h4>
-          <h5>
-            { subtitle }
-          </h5>
-          <p>
-            { storyline }
-          </p>
-          <h3>
-            { rating }
-          </h3>
+          <h4>{ title }</h4>
+          <h5>{ subtitle }</h5>
+          <p>{ storyline }</p>
         </div>
-      </div>
+        <div>
+          {/* <Rating{ rating }/> */}
+        </div>
+      </section>
     );
   }
 }
 
 MovieCard.propTypes = {
-  movies: PropTypes.shape({
+  movie: PropTypes.shape({
     title: PropTypes.string,
     subtitle: PropTypes.string,
     storyline: PropTypes.string,
