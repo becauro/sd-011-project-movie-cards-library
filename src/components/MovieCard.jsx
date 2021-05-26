@@ -4,9 +4,11 @@ import React from 'react';
 class MovieCard extends React.Component {
   render() {
     return (
-      <section>
-      
-      </section>
+      <div>
+       <div className="movieCard">
+        <img src={this.props.img} />
+       </div>
+      </div>
     )
   }
 }
