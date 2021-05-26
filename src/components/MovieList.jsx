@@ -12,13 +12,12 @@ class MovieList extends Component {
           <MovieCard className="movie-list" movie={ value } key={ value.title } />
         ))}
       </div>
-    )
+    );
   }
 }
 
 export default MovieList;
 
-
 MovieList.propTypes = {
-  movie: PropTypes.object.isRequired
+  movies: PropTypes.object.isRequired
 };
