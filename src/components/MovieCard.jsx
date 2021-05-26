@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 
 class MovieCard extends React.Component {
   render() {
-    const { movies } = this.props;
+    const { movie } = this.props;
     return (
-      movies.map(({ title, subtitle, storyline, rating, imagePath }, index) => (
+      movie.map(({ title, subtitle, storyline, rating, imagePath }, index) => (
         <div key={ index }>
           <img src={ imagePath } alt="film" />
           <h2>{ title }</h2>
@@ -20,7 +20,7 @@ class MovieCard extends React.Component {
 }
 
 MovieCard.propTypes = {
-  movies: PropTypes.arrayOf(PropTypes.object).isRequired,
+  movie: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default MovieCard;

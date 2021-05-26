@@ -6,7 +6,7 @@ class MovieList extends React.Component {
   render() {
     return (
       <div>
-        <MovieCard movies={ Data } />
+        <MovieCard movie={ Data } />
       </div>
     );
   }
