@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 
 export class MovieList extends Component {
   render() {
-    const { movies } = this.props;
-    return <div />;
+    const movies = this.props.movies;
+    return movies.map(element => <MovieCard />);
   }
 }
 
