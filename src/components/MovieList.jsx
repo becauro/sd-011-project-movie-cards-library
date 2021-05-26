@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import '../data'
+import MovieCard from './MovieCard';
 
 class MovieList extends Component {
   render() {
     const { movies } = this.props;
-    console.log(movies);
     return (
-      <h1>just to pass eslint test</h1>
+      <div>
+        { movies.map((movie, index) => <MovieCard movie={ movie } key={ index } />)}
+      </div>
     );
   }
 }
