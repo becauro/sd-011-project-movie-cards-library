@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import MovieCard from './MovieCard';
-class MovieList extends Component {
 
+class MovieList extends Component {
   render() {
     const { movies } = this.props;
 
@@ -13,7 +13,7 @@ class MovieList extends Component {
           <MovieCard movie={ movie } key={ `Movie Title ${key + 1}` } />
         )) }
       </div>
-    )
+    );
   }
 }
 
@@ -24,7 +24,7 @@ MovieList.propTypes = {
     storyline: PropTypes.string,
     rating: PropTypes.number,
     imagePath: PropTypes.string,
-  }))
+  })).isRequired,
 };
 
 MovieList.defaultProps = {
