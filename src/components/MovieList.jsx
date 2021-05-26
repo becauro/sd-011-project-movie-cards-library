@@ -3,7 +3,11 @@ import React from 'react';
 
 class MovieList extends React.Component {
   render() {
-    <MovieList />;
+    const { movies } = this.context;
+    return (
+      <div>
+        {movies}
+      </div>);
   }
 }
 export default MovieList;
