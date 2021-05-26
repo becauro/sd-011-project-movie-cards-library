@@ -18,7 +18,7 @@ export default MovieList;
 MovieList.propTypes = {
   movies: PropTypes.arrayOf(
     PropTypes.shape({
-      name: PropTypes.string,
+      title: PropTypes.string,
       subtitle: PropTypes.string,
       storyline: PropTypes.string,
       imagePath: PropTypes.string,
