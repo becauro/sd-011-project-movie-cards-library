@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export class Rating extends Component {
+class Rating extends Component {
   render() {
     return (
       <p className="rating">
