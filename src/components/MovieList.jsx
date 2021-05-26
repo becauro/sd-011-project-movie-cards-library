@@ -4,10 +4,11 @@ import MovieCard from './MovieCard';
 
 class MovieList extends Component {
   render() {
+    const { movies } = this.props;
+
     return (
       <ul>
-        { this.props.movies.map((movieData) => 
-          <MovieCard movie={ movieData } key={ movieData.title } />) }
+        { movies.map((movieData) => <MovieCard movie={ movieData } key={ movieData.title } />) }
       </ul>
     );
   }
@@ -20,7 +21,7 @@ MovieList.propTypes = {
     storyline: PropTypes.string.isRequired,
     imagePath: PropTypes.string.isRequired,
     rating: PropTypes.number.isRequired,
-  })),
+  })).isRequired,
 }
 
 export default MovieList;
