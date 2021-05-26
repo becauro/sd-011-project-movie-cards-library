@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="movie-card-body">
       <Header />
-      <MovieList />
+      <MovieList movies={ card } />
     </div>
   );
 }

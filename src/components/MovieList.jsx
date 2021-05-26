@@ -1,9 +1,10 @@
+import { checkPropTypes } from 'prop-types';
 import React from 'react';
 import MovieCard from './MovieCard';
-import movies from '../data';
 
 class MovieList extends React.Component {
   render() {
+    const { movies } = this.props;
     return (
       <div className="movie-list">
         {movies.map((card, index) => <MovieCard info={ card } key={ index } />)}
@@ -13,3 +14,9 @@ class MovieList extends React.Component {
 }
 
 export default MovieList;
+
+MovieList.propTypes = {
+  info: PropTypes.shape({
+    movies: PropTypes.,
+  }).isRequired,
+};
