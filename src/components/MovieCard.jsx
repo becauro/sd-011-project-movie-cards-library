@@ -1,9 +1,9 @@
 // implement MovieCard component here
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Rating from './Rating';
+import Ratings from './Rating';
 
-export class MovieCard extends Component {
+export class MovieCards extends Component {
   render() {
     const { title, subtitle, storyline, imagePath, rating } = this.props.movie;
     return (
@@ -12,7 +12,7 @@ export class MovieCard extends Component {
         <h4>{ title }</h4>
         <h5>{ subtitle }</h5>
         <p>{ storyline }</p>
-        <Rating rating={ rating } />
+        <Ratings rating={ rating } />
       </>
     );
   }
@@ -32,4 +32,4 @@ MovieCard.defaultProps = {
   movie: {},
 };
 
-export default MovieCard;
+export default MovieCards;
