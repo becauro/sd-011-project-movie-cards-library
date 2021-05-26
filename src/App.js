@@ -6,9 +6,11 @@ import data from './data.js'
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Header />
+    <div className="body movie-list">
       <MovieList movies={data} />
+    </div>
     </div>
   );
 }

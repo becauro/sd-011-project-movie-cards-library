@@ -7,7 +7,7 @@ class MovieList extends Component {
     const arrayOfMovies = this.props.movies;
 
     return(
-      <div>
+      <div class="movie-list">
         {arrayOfMovies.map((movie, index) => 
         <MovieCard key={movie.title} movie={movie} />)}
       </div>
