@@ -9,7 +9,7 @@ class Rating extends Component {
       <div className="rating">
         {rating}
       </div>
-    )
+    );
   }
 }
 
