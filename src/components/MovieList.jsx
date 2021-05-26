@@ -5,14 +5,14 @@ import MovieCard from './MovieCard';
 
 class MovieList extends Component {
   render() {
-    const arrayOfMovies = this.props.movies;
+    const { movies } = this.props;
 
     return (
       <div className="movie-list">
-        { arrayOfMovies
-          .map((movie) => <MovieCard key={movie.title} movie={movie} />)}
+        { movies
+          .map((movie) => <MovieCard key={ movie.title } movie={ movie } />)}
       </div>
-    )
+    );
   }
 }
 
