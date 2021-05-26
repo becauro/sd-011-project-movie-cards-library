@@ -10,8 +10,8 @@ class MovieCard extends Component {
         <h4>{ title }</h4>
         <h5>{ subtitle }</h5>
         <p>{ storyline }</p>
-        <Rating movieRating = { rating } />
-        <img src={imagePath}/>
+        <Rating movieRating={ rating } />
+        <img src={imagePath} alt={title} />
       </div>
     );
   }
@@ -20,8 +20,9 @@ class MovieCard extends Component {
 export default MovieCard;
 
 MovieCard.propTypes = {
-  title: PropTypes.string,
-  subtitle: PropTypes.string,
-  rating: PropTypes.number,
-  imagePath: PropTypes.string
+  movie: PropTypes.object,
+  movie.title: PropTypes.string,
+  movie.subtitle: PropTypes.string,
+  movie.rating: PropTypes.number,
+  movie.imagePath: PropTypes.string
 }
