@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 function Rating({ rating }) {
   return (
@@ -8,9 +7,5 @@ function Rating({ rating }) {
     </div>
   );
 }
-
-Rating.propTypes = {
-  rating: PropTypes.number,
-};
 
 export default Rating;
