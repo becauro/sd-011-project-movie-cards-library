@@ -1,17 +1,20 @@
 import React from 'react';
-import MovieCard from './MovieCard'
-
+import PropTypes from 'prop-types';
+import MovieCard from './MovieCard';
 
 class MovieList extends React.Component {
   render() {
-    return(
+    const { movies } = this.props;
+    return (
       <div>
-        {this.props.movies.map(movie => <MovieCard key={movie.title} movie={movie} />)}
-        {console.log(this.props.xablau)}
+        {movies.map((movie) => <MovieCard key={ movie.title } movie={ movie } />)}
       </div>
-      
-    )
+    );
   }
 }
 
-export default MovieList
+MovieList.propTypes = {
+  movies: PropTypes.string.isRequired,
+};
+
+export default MovieList;
