@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import React, { Component } from 'react';
+//  import PropTypes from 'prop-types';
 
 class Header extends Component {
   render() {
@@ -12,4 +12,3 @@ class Header extends Component {
 }
 
 export default Header;
-
