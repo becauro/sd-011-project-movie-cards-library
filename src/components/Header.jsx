@@ -1,13 +1,13 @@
 // implement Header component here
 import React, { Component } from 'react';
 // import './App.css';
-
+const title = 'Movie Cards Library';
 class Header extends Component {
-  render () {
+  render() {
     return (
-      <h1>"Movie Cards Library"</h1>
-    )
-};
+      <h1>{title}</h1>
+    );
+  }
 }
 
 export default Header;
