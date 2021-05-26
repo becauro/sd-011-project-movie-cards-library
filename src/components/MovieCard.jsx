@@ -23,4 +23,3 @@ MovieCard.propTypes = {
 };
 
 export default MovieCard;
-// .objectOf(propTypes.object()).isRequired,
