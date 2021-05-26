@@ -1,5 +1,3 @@
-// implement MovieList component here
-
 import React from 'react';
 import propTypes from 'prop-types';
 import MovieCard from './MovieCard';
@@ -9,9 +7,9 @@ class MovieList extends React.Component {
     const { movies } = this.props;
 
     return (
-      <section>
+      <div>
         { movies.map((movie) => <MovieCard movie={ movie } key={ movie.title } />) }
-      </section>
+      </div>
     );
   }
 }
@@ -19,6 +17,7 @@ class MovieList extends React.Component {
 // References:
 // Typechecking: https://reactjs.org/docs/typechecking-with-proptypes.html
 // What is Props? http://lucasmaiaesilva.com.br/guia-de-bolso-react/chapter/props.html
+
 MovieList.propTypes = {
   movies: propTypes.instanceOf(Array).isRequired,
 };
