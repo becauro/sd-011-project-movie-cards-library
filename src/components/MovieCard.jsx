@@ -12,7 +12,7 @@ class MovieCard extends Component {
         <h5 className="movie-card-subtitle">{ subtitle }</h5>
         <img className="movie-card-image" src={ imagePath } alt="movie poster"/>
         <p className="movie-card-storyline">{ storyline }</p>
-        <Rating rating={rating} />
+        <Rating rating={ rating} />
       </div>
     );
   }
