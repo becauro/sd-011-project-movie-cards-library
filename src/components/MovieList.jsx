@@ -6,8 +6,8 @@ import { MovieCard } from './MovieCard';
 export class MovieList extends Component {
   render() {
     const { movies } = this.props;
-    return movies.map((element) => (
-      <MovieCard movie={ element } key={ element.title } />
+    return movies.map((movie) => (
+      <MovieCard movie={ movie } key={ movie.title } />
     ));
   }
 }
