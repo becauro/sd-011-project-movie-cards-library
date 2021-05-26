@@ -10,8 +10,8 @@ class MovieCard extends Component {
         <h4>{ title }</h4>
         <h5>{ subtitle }</h5>
         <p>{ storyline }</p>
-        <Rating movieRating={ rating } />
         <img src={ imagePath } alt={ title } />
+        <Rating movieRating={ rating } />
       </div>
     );
   }
