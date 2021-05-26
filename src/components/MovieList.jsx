@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import MovieCard from './MovieCard';
 
-export default class MovieList extends Component {
+class MovieList extends Component {
   render() {
     const { movies } = this.props;
     return (
@@ -17,3 +18,21 @@ export default class MovieList extends Component {
     );
   }
 }
+
+MovieList.defaultProps = {
+  movies: [
+    {
+      title: 'Stranger',
+      subtitle: 'Stranger',
+      storyline: 'Stranger',
+      rating: NaN,
+      imagePath: 'Stranger',
+    },
+  ],
+};
+
+MovieList.propTypes = {
+  movies: PropTypes.arrayOf(PropTypes.object),
+};
+
+export default MovieList;
