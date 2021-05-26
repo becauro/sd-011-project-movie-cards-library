@@ -15,12 +15,11 @@ class MovieList extends React.Component {
 }
 
 MovieList.propTypes = {
-  // eslint-disable-next-line react/require-default-props
   movies: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string,
     }),
-  ),
+  ).isRequired,
 };
 
 export default MovieList;
