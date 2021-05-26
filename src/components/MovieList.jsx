@@ -1,5 +1,6 @@
 import React from 'react';
 import MovieCard from './MovieCard';
+import PropTypes from 'prop-types';
 
 class MovieList extends React.Component {
   render() {
@@ -13,5 +14,13 @@ class MovieList extends React.Component {
     );
   }
 }
+
+MovieList: PropTypes.exact({
+  imagePath: PropTypes.string,
+  title: PropTypes.string,
+  subtitle: PropTypes.string,
+  storyline: PropTypes.string,
+  rating: PropTypes.number,
+});
 
 export default MovieList;

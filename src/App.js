@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import Header from './components/Header';
-import MovieCard from './components/MovieCard';
 import MovieList from './components/MovieList';
 import data from './data';
 
@@ -11,7 +10,6 @@ class App extends React.Component {
       <div className="App">
         <Header />
         <MovieList movies={ data } />
-        <MovieCard />
       </div>
     );
   }
