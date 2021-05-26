@@ -1,5 +1,4 @@
 import React from 'react';
-
 class MovieCard extends React.Component {
   render() {
     const { title, subtitle, storyline, imagePath, rating } = this.props.movie;
@@ -12,7 +11,7 @@ class MovieCard extends React.Component {
         <p>{ storyline }</p>
         <p>{ rating }</p>
       </div>
-    )
+    );
   }
 }
 
