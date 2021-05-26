@@ -9,12 +9,15 @@ class Rating extends React.Component {
         <span className="rating">{ rating }</span>
       </div>
     );
-  };
+  }
 }
 
 export default Rating;
 
-Rating.propType = {
-  rating: PropTypes.number.isRequired,
+Rating.propTypes = {
+  rating: PropTypes.number(
+    PropTypes.shape({
+      rating: PropTypes.number.isRequired,
+    })
+  )
 };
-
