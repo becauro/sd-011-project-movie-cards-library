@@ -1,6 +1,5 @@
 // implement MoviList component here
 import React from 'react';
-import MovieCard from './MovieCard';
 
 class MovieList extends React.Component {
   render() {
@@ -8,7 +7,6 @@ class MovieList extends React.Component {
     return (
       <div>
         {movies}
-        {movies.map((_, index) => <MovieCard key={ index } />)}
       </div>);
   }
 }
