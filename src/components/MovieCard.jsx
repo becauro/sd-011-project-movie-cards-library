@@ -8,7 +8,7 @@ class MovieCard extends Component {
     const { title, subtitle, storyline, rating, imagePath } = movie;
     return (
       <div>
-        <p>{ title }</p>
+        <h4>{ title }</h4>
         <p>{ subtitle }</p>
         <p>{ storyline }</p>
         <p>{ rating }</p>
