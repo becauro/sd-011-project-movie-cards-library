@@ -4,14 +4,14 @@ import Rating from './Rating';
 
 class MovieList extends React.Component {
   render() {
-    const movies = this.props.movies;
+    const { movies } = this.props;
     return (
-        movies.map((item) => {
-          return <div className = 'movie-container'>
-            <MovieCard movie = {item} />
-            <Rating score = {item.rating}/>
-          </div>
-        })
+      movies.map((item) => 
+         <div className = "movie-container">
+          (<MovieCard movie={ item } />
+          <Rating score={ item.rating }/>)
+        </div>
+      )
     );
   }
 }
