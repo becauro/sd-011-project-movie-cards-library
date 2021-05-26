@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import MovieCard from './MovieCard';
 import PropTypes from 'prop-types';
+import MovieCard from './MovieCard';
 
 class MovieList extends Component {
   render() {
@@ -25,9 +25,10 @@ MovieList.propTypes = {
       imagePath: PropTypes.string,
       rating: PropTypes.number,
     }),
-  ) };
+  )
+};
 
-  MovieList.defaultProps = {
+MovieList.defaultProps = {
   movies: [],
 };
 
