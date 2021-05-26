@@ -3,17 +3,18 @@ import PropTypes from 'prop-types';
 
 class Rating extends Component {
   render() {
-    const rating = this.props;
+    const { rating } = this.props;
     return (
-      <div className="rating">
-        { rating }
-      </div>
+      <section className="rating">{rating}</section>
     );
   }
 }
 
-export default Rating;
-
-propTypes = {
-  rating: PropTypes.string,
+Rating.propTypes = {
+  rating: PropTypes.number,
 };
+
+Rating.defaultProps = {
+  rating: 0,
+};
+export default Rating;
