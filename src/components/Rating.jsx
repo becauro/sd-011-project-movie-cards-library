@@ -12,3 +12,11 @@ class Header extends Component {
 }
 
 export default Header;
+
+Rating.propTypes = {
+  rating: PropTypes.number,
+};
+
+Rating.defaultProps = {
+  rating: 1,
+};
