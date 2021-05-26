@@ -3,7 +3,13 @@ import React, { Component } from 'react';
 
 export class MovieCard extends Component {
   render() {
-    return <div></div>;
+    const { movie } = this.props;
+    const { title, subtitle, storyline, imagePath, rating } = movie;
+    return (
+      <div>
+        <img src={ imagePath } alt="movie" />
+      </div>
+    );
   }
 }
 
