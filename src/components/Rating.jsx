@@ -18,6 +18,6 @@ Rating.propTypes = {
 
 Rating.defaultProps = {
   rating: 5,
-}
+};
 
 export default Rating;
