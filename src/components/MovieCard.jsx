@@ -31,5 +31,5 @@ MovieCard.propTypes = {
 };
 
 MovieCard.defaultProps = {
-  movies: {},
+  movie: {},
 };
