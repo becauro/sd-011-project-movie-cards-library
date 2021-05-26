@@ -1,9 +1,12 @@
-// import React from 'react';
+import React from 'react';
 
-// class MovieCard extends React.Component {
-//   render() {
-//     return <li></li>
-//   }
-// }
+class MovieCard extends React.Component {
+  render() {
+    const movies = this.props;
+    return (
+      <li>ola</li>
+    )
+  }
+}
 
-// export default MovieCard;
+export default MovieCard;
