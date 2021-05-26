@@ -12,6 +12,7 @@ class MovieCard extends React.Component {
             .map(([key, value]) => <p key={ key }>{ `${key}: ${value}` }</p>)
         }
         <img src={ imagePath } alt={ `${title} - ${subtitle} movie cover` } />
+        <h4>{title}</h4>
       </section>
     );
   }
