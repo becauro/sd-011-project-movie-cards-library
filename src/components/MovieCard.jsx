@@ -18,7 +18,7 @@ export class MovieCards extends Component {
   }
 }
 
-MovieCard.propTypes = {
+MovieCards.propTypes = {
   movie: PropTypes.objectOf({
     title: PropTypes.string,
     subtitle: PropTypes.string,
@@ -28,7 +28,7 @@ MovieCard.propTypes = {
   }),
 };
 
-MovieCard.defaultProps = {
+MovieCards.defaultProps = {
   movie: {},
 };
 

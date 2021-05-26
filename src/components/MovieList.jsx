@@ -16,11 +16,11 @@ export class MovieLists extends Component {
   }
 }
 
-MovieList.propTypes = {
+MovieLists.propTypes = {
   movies: PropTypes.arrayOf(PropTypes.object),
 };
 
-MovieList.defaultProps = {
+MovieLists.defaultProps = {
   movies: [],
 };
 
