@@ -7,7 +7,7 @@ class Rating extends React.Component {
   }
 }
 
-Rating.propTypes = {
+PropTypes.exact = {
   rating: PropTypes.number,
 };
 
