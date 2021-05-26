@@ -1,8 +1,8 @@
-import React , { Component } from 'react';
+import React, { Component } from 'react';
 
 class Rating extends Component {
   render() {
-    return 
+    return <div teste />;
   }
 }
 
