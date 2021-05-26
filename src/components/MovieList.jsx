@@ -3,18 +3,17 @@ import PropTypes from 'prop-types';
 import MovieCard from './MovieCard';
 
 class MovieList extends React.Component {
-  render () { 
-    const [movies] = this.props;
+  render() {
+    const { movies } = this.props;
     return (
       <div>
         { movies.map((movie) => <MovieCard key={ movie.title } movie={ movie } />) }
       </div>
     );
   }
-};
-// Ajuda do Luiz na sala "A"
+}
 
-MovieList.PropTypes = {
+MovieList.propTypes = {
   movies: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string,
