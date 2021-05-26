@@ -5,7 +5,7 @@ import MovieCard from './MovieCard';
 
 class MovieList extends Component {
   render() {
-    const movies = this.props.movies;
+    const { movies } = this.props;
     return (
       <section>
         { movies.map((movie) => <MovieCard movie={movie} />) }
@@ -15,7 +15,7 @@ class MovieList extends Component {
 }
 
 MovieList.propTypes = {
-  movies: propTypes.array.isRequired,
+  movies: propTypes.array,
 };
 
 export default MovieList;

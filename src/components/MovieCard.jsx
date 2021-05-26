@@ -3,7 +3,7 @@ import propTypes from 'prop-types';
 
 class MovieCard extends Component {
   render() {
-    const movie = this.props.movie;
+    const { movie } = this.props;
     return (
       <div>
         { movie }
@@ -13,7 +13,7 @@ class MovieCard extends Component {
 }
 
 MovieCard.propTypes = {
-  movie: propTypes.object.isRequired,
+  movie: propTypes.object,
 };
 
 export default MovieCard;
