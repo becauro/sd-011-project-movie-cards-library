@@ -15,11 +15,11 @@ class MovieList extends Component {
 
 MovieList.propTypes = {
   movies: PropTypes.arrayOf(PropTypes.shape({
-    title: PropTypes.string.required,
-    subtitle: PropTypes.string.required,
-    storyline: PropTypes.string.required,
-    imagePath: PropTypes.string.required,
-    rating: PropTypes.number.required,
+    title: PropTypes.string.isRequired,
+    subtitle: PropTypes.string.isRequired,
+    storyline: PropTypes.string.isRequired,
+    imagePath: PropTypes.string.isRequired,
+    rating: PropTypes.number.isRequired,
   })),
 }
 
