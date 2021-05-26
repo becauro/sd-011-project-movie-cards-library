@@ -2,9 +2,9 @@
 import React, { Component } from 'react';
 // import './App.css';
 
-class Header  extends Component {
-     render(){
-         return(
+class Header extends Component {
+  render(){
+    return (
      <h1>"Movie Cards Library"</h1>
      )};
 }
