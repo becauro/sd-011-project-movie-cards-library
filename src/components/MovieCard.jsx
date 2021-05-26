@@ -3,14 +3,14 @@ import React from 'react';
 
 class MovieCard extends React.Component {
   render() {
+    const { movie: { imagePath } } = this.props;
+    // const { imagePath } = this.props.movies;
     return (
       <div>
-       <div className="movieCard">
-        <img src={this.props.img} />
-       </div>
+        <img src={imagePath} />
       </div>
-    )
+      )
+    }
   }
-}
-
-export default MovieCard;
+  
+  export default MovieCard;
