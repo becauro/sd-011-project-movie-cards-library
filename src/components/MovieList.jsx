@@ -11,8 +11,12 @@ class MovieList extends Component {
           <MovieCard key={ movie.title } />
         )) }
       </div>
-    )
+    );
   }
 }
+
+MovieList.propTypes = {
+  movies: PropTypes.array,
+};
 
 export default MovieList;
