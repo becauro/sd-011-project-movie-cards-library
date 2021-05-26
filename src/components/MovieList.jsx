@@ -1,21 +1,13 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 class MovieList extends React.Component {
   render() {
-    const { movies } = this.props;
     return (
       <div>
-        {movies.map((item))}
+        <h1>Hey!</h1>
       </div>
     );
   }
 }
-
-MovieList.propTypes = {
-  movies: PropTypes.shape({
-    map: PropTypes.string,
-  }).isRequired,
-};
 
 export default MovieList;
