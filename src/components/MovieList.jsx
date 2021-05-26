@@ -7,6 +7,7 @@ class MovieList extends React.Component {
     const { movies } = this.context;
     return (
       <div>
+        {movies}
         {movies.map((_, index) => <MovieCard key={ index } />)}
       </div>);
   }
