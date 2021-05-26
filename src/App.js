@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <Header />
       <MovieList movies={ Data } />
-      <Rating />
+      <Rating rating={ Data }/>
     </div>
   );
 }
