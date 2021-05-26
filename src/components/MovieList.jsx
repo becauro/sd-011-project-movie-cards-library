@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
+import propTypes from 'prop-types';
 import MovieCard from './MovieCard';
-import PropTypes from 'prop-types';
 
 
 class MovieList extends Component {
@@ -10,12 +10,12 @@ class MovieList extends Component {
       <section>
         { movies.map((movie) => <MovieCard movie={movie} />) }
       </section>
-     );
+    );
   }
-};
+}
 
-MovieList.PropTypes = {
-  movies: PropTypes.array.isRequired,
+MovieList.propTypes = {
+  movies: propTypes.array.isRequired,
 };
 
 export default MovieList;
