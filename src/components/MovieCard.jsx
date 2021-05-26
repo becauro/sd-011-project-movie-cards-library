@@ -18,7 +18,7 @@ class MovieCard extends Component {
           {storyline}
         </p>
         <Rating rating={ rating } />
-        <img src={ imagePath } alt={`${ title } thumbnail`} />
+        <img src={ imagePath } alt={ `${title} thumbnail` } />
       </div>
     );
   }
