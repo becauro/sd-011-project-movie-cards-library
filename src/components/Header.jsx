@@ -1,5 +1,4 @@
 // implement Header component here
-// test
 
 import React from 'react';
 
