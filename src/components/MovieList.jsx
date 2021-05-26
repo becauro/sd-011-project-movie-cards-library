@@ -16,6 +16,7 @@ class MovieList extends React.Component {
   }
 }
 
+// Typechecking: https://reactjs.org/docs/typechecking-with-proptypes.html
 MovieList.propTypes = {
   movies: propTypes.instanceOf(Array).isRequired,
 };
