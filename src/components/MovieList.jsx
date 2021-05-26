@@ -17,14 +17,15 @@ class MovieList extends React.Component {
 MovieList.propTypes = {
   movies: PropTypes.arrayOf(
     PropTypes.shape({
-      name: PropTypes.string,
       title: PropTypes.string,
       subtitle: PropTypes.string,
       storyline: PropTypes.string,
       imagePath: PropTypes.string,
+      rating: PropTypes.number,
     }),
   ),
 };
+
 MovieList.defaultProps = {
   movies: [],
 };
