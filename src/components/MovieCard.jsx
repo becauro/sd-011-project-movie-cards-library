@@ -1,4 +1,5 @@
 // implement MovieCard component here
+import PropTypes from 'prop-types';
 import React from 'react';
 import Rating from './Rating';
 
