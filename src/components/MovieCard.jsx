@@ -31,9 +31,9 @@ class MovieCard extends React.Component {
   render() {
     return (
       <div>
-        <li>{movies[0]}</li>
-        <li>{movies[1]}</li>
-        <li>{movies[2]}</li>
+        <li>title1</li>
+        <li>title2</li>
+        <li>titl3</li>
       </div>
     );
   }
