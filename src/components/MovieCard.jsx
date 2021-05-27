@@ -1,10 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Rating from './Rating';
+import '../data';
 
 class MovieCard extends React.Component {
   render() {
-    const { movies: { title, subtitle, storyline, imagePath } } = this.props;
+    const { movie } = this.props;
+    const { title, subtitle, storyline, imagePath } = movie;
     return (
       <section>
         <div>
@@ -22,7 +24,7 @@ class MovieCard extends React.Component {
 }
 
 MovieCard.propTypes = {
-  movies: PropTypes.shape({
+  movie: PropTypes.shape({
     title: PropTypes.string.isRequired,
     subtitle: PropTypes.string.isRequired,
     storyline: PropTypes.string.isRequired,
