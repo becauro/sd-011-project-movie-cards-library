@@ -13,10 +13,11 @@ class MovieList extends Component {
   }
 }
 
-export default MovieList;
-
-MovieList.prototype = {
-  movies: PropTypes.arrayOf(PropTypes.shape({
+MovieList.propTypes = {
+  movies: PropTypes.shape({
+    map: PropTypes.string,
     title: PropTypes.string,
-  })),
+  }).isRequired,
 };
+
+export default MovieList;
