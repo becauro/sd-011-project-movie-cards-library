@@ -5,13 +5,9 @@ import PropTypes from 'prop-types';
 
 class MovieCard extends React.Component {
   render() {
-    const { movies } = this.props;
-    const { title } = movies;
-    const { subtitle } = movies;
-    const { storyline } = movies;
-    const { rating } = movies;
+    const { movie } = this.props;
     const { index } = this.props;
-    const { imagePath } = movies;
+    const { title, subtitle, storyline, rating, imagePath } = movie;
     const classes = `${index} MovieCard`;
 
     return (
@@ -33,13 +29,34 @@ class MovieCard extends React.Component {
 }
 
 MovieCard.propTypes = {
-  movies: PropTypes.arrayOf(PropTypes.object).isRequired,
-  title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string.isRequired,
-  storyline: PropTypes.string.isRequired,
-  rating: PropTypes.number.isRequired,
-  index: PropTypes.number.isRequired,
-  imagePath: PropTypes.string.isRequired,
+  movie: PropTypes.shape({
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    rating: PropTypes.number,
+    imagePath: PropTypes.string,
+  }),
+  title: PropTypes.string,
+  subtitle: PropTypes.string,
+  storyline: PropTypes.string,
+  rating: PropTypes.number,
+  index: PropTypes.number,
+  imagePath: PropTypes.string,
 };
 
+MovieCard.defaultProps = {
+  movie: PropTypes.shape({
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    rating: PropTypes.number,
+    imagePath: PropTypes.string,
+  }),
+  title: PropTypes.string,
+  subtitle: PropTypes.string,
+  storyline: PropTypes.string,
+  rating: PropTypes.number,
+  imagePath: PropTypes.string,
+  index: PropTypes.number,
+};
 export default MovieCard;
