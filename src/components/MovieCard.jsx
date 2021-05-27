@@ -16,7 +16,7 @@ class MovieCard extends React.Component {
         <div className="Image">
           <img src={ imagePath } alt={ title } />
         </div>
-        <div className="info-gradient"></div>
+        <div className="info-gradient" />
         <div className="Infos">
           <div className="title">
             <h4>{ title }</h4>
