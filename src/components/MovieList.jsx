@@ -1,8 +1,14 @@
 import React from 'react';
+import MovieCard from './MovieCard';
+import movies from '../data';
 
 class MovieList extends React.Component {
     render() {
-        return <p> films={this.props.movies} </p>
+        return (
+        <div>
+       {movies.forEach((movies, index)=> <MovieCard movie={ movies } key={ index }/> )}
+        </div>
+        )
     }
 }
 
