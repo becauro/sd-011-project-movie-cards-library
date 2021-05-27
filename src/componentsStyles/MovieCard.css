@@ -1,0 +1,27 @@
+.MovieCard {
+  background-color: hotpink;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 320px;
+  margin: 20px 40px;
+  width: 250px;
+}
+
+.Infos {
+  background-color: grey;
+}
+
+.Image img {
+  border-radius: 5px 5px 0 0;
+  height: 150px;
+  width: 250px;
+}
+
+.Ratings {
+  background-color: rgb(0, 4, 255);
+}
