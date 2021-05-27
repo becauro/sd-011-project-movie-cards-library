@@ -1,5 +1,4 @@
 // implement MovieList component here
-import PropTypes from 'prop-types';
 import React from 'react';
 import MovieCard from './MovieCard';
 
