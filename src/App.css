@@ -23,6 +23,8 @@ body {
   display: flex;
   flex-flow: row wrap;
   padding: 48px 30px;
+  align-items: center;
+  justify-content: center;
 }
 
 .movie-card {
@@ -36,7 +38,6 @@ body {
   overflow: hidden;
   width: 300px;
 }
-
 
 .movie-card-image {
   width: 100%;
