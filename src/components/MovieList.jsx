@@ -15,12 +15,15 @@ class MovieList extends React.Component {
   }
 }
 
-PropTypes.exact({
-  imagePath: PropTypes.string,
-  title: PropTypes.string,
-  subtitle: PropTypes.string,
-  storyline: PropTypes.string,
-  rating: PropTypes.number,
+MovieList.propTypes = ({
+  movies: Proptypes.arrayOf(Propatypes.object).isRequired,
+  movie: PropTypes.exact({
+    imagePath: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    subtitle: PropTypes.string.isRequired,
+    storyline: PropTypes.string.isRequired,
+    rating: PropTypes.number.isRequired,
+  }).isRequired,
 });
 
 export default MovieList;
