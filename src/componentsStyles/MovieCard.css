@@ -1,24 +1,64 @@
 .MovieCard {
   background-color: hotpink;
-  background-position: right;
-  background-repeat: no-repeat;
   background-size: cover;
   border-radius: 5px;
   color: white;
   display: flex;
   flex-direction: column;
-  height: 320px;
+  height: 335px;
   margin: 20px 40px;
   width: 250px;
 }
 
 .Infos {
-  background-color: grey;
+  background-color: dimgray;
+  border-radius: 0 0 5px 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 205px;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.info-gradient {
+  background: linear-gradient(to top, dimgray 50%, transparent);
+  height: 255px;
 }
 
 .Image img {
   border-radius: 5px 5px 0 0;
   height: 150px;
+  margin-bottom: -20px;
   width: 250px;
 }
 
+.title {
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+}
+
+.story-line {
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  justify-content: space-around;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+.story-line p {
+  font-size: 12px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 12px;
+  opacity: 0.8;
+}
