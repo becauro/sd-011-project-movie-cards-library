@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount, shallow } from 'enzyme';
 import MovieCard from '../components/MovieCard';
-import Rating from '../components/Rating';
+import NewRating from '../components/Rating';
 
 const rating = 4.5;
 const ratingThree = 3;
@@ -31,14 +31,14 @@ const movies = [
 
 describe('11 - Crie um componente `<Rating />`', () => {
   it('Renderize o componente `<Rating />`', () => {
-    shallow(<Rating />);
+    shallow(<NewRating />);
   });
 });
 
 describe('12 - Renderize a nota de um filme dentro de `Rating`', () => {
   let wrapper;
   it('Renderize a nota de um filme dentro de `Rating`', () => {
-    wrapper = shallow(<Rating rating={ 3 } />);
+    wrapper = shallow(<NewRating rating={ 3 } />);
     expect(wrapper.find('.rating').text()).toEqual('3');
   });
 });
