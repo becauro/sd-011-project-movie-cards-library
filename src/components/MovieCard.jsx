@@ -29,16 +29,16 @@ MovieCard.propTypes = {
     subtitle: propTypes.string,
     storyline: propTypes.string,
     imagePath: propTypes.string,
-    rating: propTypes.string,
-  }),
+    rating: propTypes.number,
+  }).isRequired,
 };
 
-MovieCard.defaultProps = {
-  movie: {
-    title: 'First',
-    subtitle: 'Second',
-    storyline: 'Third',
-    imagePath: 'Fourth',
-    rating: 1,
-  },
-};
+// MovieCard.defaultProps = {
+//   movie: {
+//     title: 'First',
+//     subtitle: 'Second',
+//     storyline: 'Third',
+//     imagePath: 'Fourth',
+//     rating: 1,
+//   },
+// };
