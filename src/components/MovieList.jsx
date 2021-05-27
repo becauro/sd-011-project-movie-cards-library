@@ -10,7 +10,7 @@ class MovieList extends React.Component {
         return <MovieCard movies = { item } key = {item.title}/>;
        })}
      </div>
-    )
+    );
   }
 }
 
