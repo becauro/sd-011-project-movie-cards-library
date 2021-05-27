@@ -6,6 +6,7 @@ class MovieCard extends Component {
     const { title, subtitle, storyline, imagePath, rating } = this.props.movie;
     return (
       <div>
+        <img src={imagePath} alt={`Imagem do filme ${title}`} />
 
       </div>
     );
