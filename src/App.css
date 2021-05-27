@@ -20,11 +20,11 @@ body {
 }
 
 .movie-list {
+  align-items: center;
   display: flex;
   flex-flow: row wrap;
-  padding: 48px 30px;
-  align-items: center;
   justify-content: center;
+  padding: 48px 30px;
 }
 
 .movie-card {
