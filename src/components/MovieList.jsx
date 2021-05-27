@@ -19,20 +19,8 @@ class MovieList extends Component {
   }
 }
 
-MovieList.defaultProps = {
-  movies: [
-    {
-      title: 'Stranger',
-      subtitle: 'Stranger',
-      storyline: 'Stranger',
-      rating: NaN,
-      imagePath: 'Stranger',
-    },
-  ],
-};
-
 MovieList.propTypes = {
-  movies: PropTypes.arrayOf(PropTypes.object),
+  movies: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default MovieList;

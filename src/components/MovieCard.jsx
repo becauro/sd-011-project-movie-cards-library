@@ -21,21 +21,24 @@ class MovieCard extends Component {
 }
 
 MovieCard.defaultProps = {
-  title: 'Stranger',
-  subtitle: 'Stranger',
-  storyline: 'Stranger',
-  rating: NaN,
-  imagePath: 'Stranger',
+  movie: {
+    title: 'Stranger',
+    subtitle: 'Stranger',
+    storyline: 'Stranger',
+    rating: NaN,
+    imagePath: 'Stranger',
+  },
 
 };
 
 MovieCard.propTypes = {
-  movie: PropTypes.objectOf(PropTypes.array, PropTypes.number).isRequired,
-  title: PropTypes.string,
-  subtitle: PropTypes.string,
-  storyline: PropTypes.string,
-  imagePath: PropTypes.string,
-  rating: PropTypes.number,
+  movie: PropTypes.shape({
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    imagePath: PropTypes.string,
+    rating: PropTypes.number,
+  }),
 };
 
 export default MovieCard;
