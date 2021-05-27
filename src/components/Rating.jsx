@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 
 class Rating extends React.Component {
   render() {
-    // const { movies: rating } = this.props;
     return (<Rating rating={ 3 } />);
   }
 }
