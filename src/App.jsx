@@ -9,7 +9,7 @@ import MovieList from './components/MovieList';
 function App() {
   return (
     <div className="App">
-      <Header>
+      <Header />
       <MovieList movies={ movies } />
     </div>
   );
