@@ -8,11 +8,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <body>
-        <ul>
-          <MovieList movies={ Data } />
-        </ul>
-      </body>
+      <MovieList movies={ Data } />
     </div>
   );
 }
