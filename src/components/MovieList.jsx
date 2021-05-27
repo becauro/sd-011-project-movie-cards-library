@@ -16,7 +16,7 @@ class MovieList extends React.Component {
 }
 
 MovieList.propTypes = ({
-  movies: Proptypes.arrayOf(Propatypes.object).isRequired,
+  movies: PropTypes.arrayOf(PropTypes.object).isRequired,
   movie: PropTypes.exact({
     imagePath: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
