@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 export default class MovieCard extends Component {
   render() {
-    const { movie: {title, imagePath, subtitle, storyline} } = this.props;
+    const { movie: { title, imagePath, subtitle, storyline } } = this.props;
 
     return (
       <div>
@@ -17,15 +17,10 @@ export default class MovieCard extends Component {
 }
 
 MovieCard.propTypes = {
-  img: PropTypes.string,
-  title: PropTypes.string,
-  storyline: PropTypes.string,
-  subtitle: PropTypes.string,
-};
-
-MovieCard.defaultProps = {
-  img: '',
-  title: '',
-  storyline: '',
-  subtitle: '',
+  movie: PropTypes.exact({
+    title: PropTypes.string.isRequired,
+    subtitle: PropTypes.string.isRequired,
+    storyline: PropTypes.string.isRequired,
+    imagePath: PropTypes.string.isRequired,
+  }).isRequired,
 };
