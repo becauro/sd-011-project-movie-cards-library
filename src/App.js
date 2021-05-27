@@ -7,15 +7,12 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-
-        <Header />
-        <MovieList />
-
-        Hora de codar! 🚀✍️👨‍💻👩‍💻💪
-
+      
+      <Header />
+      <MovieList />
       </div>
-    );
+      );
+    }
   }
-}
-
-export default App;
+  
+  export default App;
