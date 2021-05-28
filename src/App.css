@@ -37,6 +37,15 @@ body {
   width: 300px;
 }
 
+.movie-card:hover {
+  background-color: rgba(0, 0, 0, 0.062);
+  transition: 0.5s;
+}
+
+.movie-card:active {
+  background-color: rgba(255, 0, 0, 0.185);
+}
+
 
 .movie-card-image {
   width: 100%;
