@@ -4,7 +4,7 @@ class Rating extends React.Component {
   render() {
     const { rating } = this.props
     return (
-      <span></span>
+      <span className='rating'>{ rating }</span>
     )
   }
 }
