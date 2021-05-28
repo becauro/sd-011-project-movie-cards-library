@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
-import header from './components/Header';
+import Heaxder from './components/Header';
+import filmes from './data';
 import MovieList from './components/MovieList';
-import MovieCard from './components/MovieCard';
 
 function App() {
   return (
     <div className="App">
-      <header />
-      <MovieList movies={ MovieCard } />
+      <Heaxder className="page-title" />
+      <MovieList movies={ filmes }> </MovieList>
     </div>
   );
 }

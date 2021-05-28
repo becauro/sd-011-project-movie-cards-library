@@ -1,7 +1,7 @@
 // implement Header component here
 import React from 'react';
 
-class header extends React.Component {
+class heaxder extends React.Component {
   render() {
     const headerx = (
       <header>
@@ -11,4 +11,4 @@ class header extends React.Component {
   }
 }
 
-export default header;
+export default heaxder;
