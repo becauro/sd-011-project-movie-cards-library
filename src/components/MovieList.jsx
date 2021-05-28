@@ -12,7 +12,7 @@ class MovieList extends Component {
   }
 }
 
-MovieList.prototypes = {
+MovieList.propTypes = {
   movies: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
