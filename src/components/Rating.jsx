@@ -4,7 +4,9 @@ export default class Rating extends Component {
   render() {
       const { rating } = this.props;
       return (
-        <div></div>
+        <div>
+          <p>{ rating }</p>
+        </div>
       )
   }
 }
