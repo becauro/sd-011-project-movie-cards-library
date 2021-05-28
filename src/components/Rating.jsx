@@ -16,8 +16,4 @@ Rating.propTypes = {
   rating: PropTypes.number.isRequired,
 };
 
-Rating.defaultPropTypes = {
-  rating: {},
-};
-
 export default Rating;
