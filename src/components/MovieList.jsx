@@ -3,8 +3,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import MovieCard from './MovieCard';
 
-// 3 - Crie um componente <MovieList />
-// 4 - Renderize componentes <MovieCard /> dentro de <MovieList />
+// 3 - Crie um componente <MovieList /> (deve receber uma prop movies)
+// 4 - Renderize componentes <MovieCard /> dentro de <MovieList /> (recebido na prop movies)
+// 5 - Passe uma key para cada <MovieCard /> renderizado (utilizar a função map) e cada componente <MovieCard /> deve receber uma prop key
 
 class MovieList extends React.Component {
   render() {
