@@ -6,7 +6,7 @@ export default class Rating extends Component {
     const { rating } = this.props;
     return (
       <div>
-        <p>
+        <p className="movie-card-rating">
           <span className="rating">{ rating }</span>
         </p>
       </div>
