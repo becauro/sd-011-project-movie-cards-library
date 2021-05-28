@@ -9,10 +9,10 @@ class App extends React.Component {
     return (
       <div className="App">
         <Header />
-        <MovieList movies={data}/>
+        <MovieList movies={ data } />
       </div>
     );
-  }  
+  }
 }
 
 export default App;
