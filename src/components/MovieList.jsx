@@ -2,7 +2,7 @@
 import React from 'react';
 
 function MovieList() {
-  return <h1></h1>;
+  return <h1>Test</h1>;
 }
 
 export default MovieList;
