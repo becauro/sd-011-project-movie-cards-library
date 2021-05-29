@@ -1,14 +1,10 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class MovieCard extends React.Component {
   render() {
-    // eslint-disable-next-line react/destructuring-assignment
-    // eslint-disable-next-line react/prop-types
-    // eslint-disable-next-line react/destructuring-assignment
-    // eslint-disable-next-line react/prop-types
-    // eslint-disable-next-line react/destructuring-assignment
-    const { title, subtitle, storyline, rating, imagePath } = this.props.filme;
+    const { filme } = this.props;
+    const { title, subtitle, storyline, rating, imagePath } = filme;
     return (
       <div>
         <img src={ imagePath } alt={ title } />
@@ -20,5 +16,19 @@ class MovieCard extends React.Component {
     );
   }
 }
+
+MovieCard.defaultProps = {
+  filme: [],
+};
+
+MovieCard.propTypes = {
+  filme: PropTypes.shape({
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    rating: PropTypes.number,
+    imagePath: PropTypes.string,
+  }),
+};
 
 export default MovieCard;
