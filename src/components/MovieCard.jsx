@@ -9,18 +9,18 @@ class MovieCard extends React.Component {
     return (
       <div className="movie-card">
         <img src={ imagePath } alt={ title } />
-        <div>
-          <h4>
+        <div className="movie-card-infos">
+          <h4 className="movie-card-title">
             { title }
           </h4>
-          <h5>
+          <h5 className="movie-card-subtitle">
             { subtitle }
           </h5>
-          <p>
+          <p className="movie-card-storyline">
             { storyline }
           </p>
         </div>
-        <Rating rating={ rating } />
+        <Rating className="movie-card-rating" rating={ rating } />
       </div>
     );
   }
@@ -35,5 +35,7 @@ MovieCard.propTypes = {
     rating: PropTypes.number,
   }).isRequired,
 };
+
+// Source https://stackoverflow.com/questions/32325912/react-proptype-array-with-shape
 
 export default MovieCard;
