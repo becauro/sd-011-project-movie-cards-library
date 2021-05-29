@@ -1,17 +1,17 @@
 body {
   background-color: whitesmoke;
-  box-sizing: border-box;
   border: 3px solid rgba(255, 0, 0, 0.685);
+  box-sizing: border-box;
   font-size: 16px;
 }
 
 .movie-card-header {
   align-items: center;
   background-color: #343a40;
-  display: flex;
-  height: 100px;
   border: 3px solid rgba(255, 0, 0, 0.685);
   color: white;
+  display: flex;
+  height: 100px;
   justify-content: center;
 }
 
