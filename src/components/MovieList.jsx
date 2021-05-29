@@ -23,4 +23,10 @@ MovieList.propTypes = {
   }).isRequired,
 };
 
+MovieList.propTypes = {
+  movies: PropTypes.shape({
+    map: PropTypes.string,
+  }).isRequired,
+};
+
 export default MovieList;
