@@ -3,9 +3,7 @@ import MovieCard from './MovieCard';
 
 class MovieList extends React.Component {
   render() {
-    return (
-      <MovieCard />
-    );
+    return <MovieCard movie={ MovieCard } />;
   }
 }
 export default MovieList;
