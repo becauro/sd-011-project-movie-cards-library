@@ -5,4 +5,6 @@ class Rating extends React.Component {
 
     return (<div>{this.props.Rating}</div>)
   }
-}
+};
+
+export default Rating;
