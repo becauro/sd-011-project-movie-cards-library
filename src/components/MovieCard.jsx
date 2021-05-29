@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Title from './Title';
+import SubTitle from './Title';
 
 class MovieCard extends React.Component {
   render() {
@@ -11,7 +12,7 @@ class MovieCard extends React.Component {
         <img src={ imagePath } alt={ title } />
         <div className="movie-card-body">
           <Title />
-          <h5>{ subtitle }</h5>
+          <SubTitle />
           <p>{ storyline }</p>
         </div>
         <span>{ rating }</span>
@@ -21,7 +22,7 @@ class MovieCard extends React.Component {
 }
 
 MovieCard.defaultProps = {
-  movie: [],
+  movie: {},
 };
 
 MovieCard.propTypes = {

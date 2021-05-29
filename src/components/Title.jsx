@@ -12,7 +12,7 @@ class Title extends React.Component {
 }
 
 Title.defaultProps = {
-  movie: [],
+  movie: {},
 };
 
 Title.propTypes = {
