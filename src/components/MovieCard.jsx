@@ -4,19 +4,20 @@ import Rating from './Rating';
 
 class MovieCard extends React.Component {
   render() {
-    const { title, subtitle, storyline, imagePath, rating } = this.props.movie;
+    console.log(this.props);
+    const { movie } = this.props;
     return (
       <div className="movie-card">
         <div className="movie-card-body">
-          <img className="movie-card-image" src={ imagePath } alt="Imagem do filme" />
+          <img className="movie-card-image" src={ movie.imagePath } alt="Imagem" />
           <div className="movie-card-header">
             <div className="movie-card-titles">
-              <h4 className="movie-card-title">{ title }</h4>
-              <h5 className="movie-card-subtitle">{ subtitle }</h5>
+              <h4 className="movie-card-title">{ movie.title }</h4>
+              <h5 className="movie-card-subtitle">{ movie.subtitle }</h5>
             </div>
-            <Rating rate={ rating } />
+            <Rating rate={ movie.rating } />
           </div>
-          <p className="movie-card-storyline">{ storyline }</p>
+          <p className="movie-card-storyline">{ movie.storyline }</p>
         </div>
       </div>
     );
@@ -25,11 +26,11 @@ class MovieCard extends React.Component {
 
 MovieCard.propTypes = {
   movie: PropTypes.exact({
-    title: PropTypes.string,
-    subtitle: PropTypes.string,
-    storyline: PropTypes.string,
-    imagePath: PropTypes.string,
-    rating: PropTypes.number,
+    title: PropTypes.string.isRequired,
+    subtitle: PropTypes.string.isRequired,
+    storyline: PropTypes.string.isRequired,
+    imagePath: PropTypes.string.isRequired,
+    rating: PropTypes.number.isRequired,
   }).isRequired,
 };
 
