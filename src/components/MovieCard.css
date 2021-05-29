@@ -1,0 +1,21 @@
+.cardContainer {
+  background-color: white;
+  border-radius: 10px;
+  height: 450px;
+  margin: 5px;
+  margin-top: 30px;
+  width: 250px;
+}
+
+.cardContainer img {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+}
+
+.cardContainer main {
+  padding: 0 10px;
+}
+
+.cardContainer .rating {
+  text-align: center;
+}
