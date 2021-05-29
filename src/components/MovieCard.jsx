@@ -21,7 +21,7 @@ class MovieCard extends React.Component {
 }
 
 /**
- * Consultei o repositório do Jhonata Braga e percebi que meu erro estava em não passar as classeName e na criação de uma div para separar os elementos dentro da section!
+ * Consultei o repositório do Jhonata Braga e percebi que meu erro estava em não passar as 'classeName' e na criação de uma div para separar os elementos dentro da section!
  * Link: // https://github.com/tryber/sd-011-project-movie-cards-library/pull/112/commits/9cdab6cfaab44e698260bd1cc752df31857dcca6
  */
 
