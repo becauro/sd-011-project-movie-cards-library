@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 class Title extends React.Component {
   render() {
-    const { filme } = this.props;
-    const { title } = filme;
+    const { movie } = this.props;
+    const { title } = movie;
     return (
       <h4 className="movie-card-title">{ title }</h4>
     );
@@ -12,11 +12,11 @@ class Title extends React.Component {
 }
 
 Title.defaultProps = {
-  filme: [],
+  movie: [],
 };
 
 Title.propTypes = {
-  filme: PropTypes.shape({
+  movie: PropTypes.shape({
     title: PropTypes.string,
   }),
 };
