@@ -7,10 +7,10 @@ body {
 .movie-card-header {
   margin-top: 0;
   top: 0;
-  width: 100%;
   align-items: center;
-  position: fixed;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
   display: flex;
   height: 100px;
   justify-content: center;
