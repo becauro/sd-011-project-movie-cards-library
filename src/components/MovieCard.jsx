@@ -5,8 +5,8 @@ import Rating from './Rating';
 
 class MovieCard extends React.Component {
   render() {
-    // const { title, subtitle, storyline, imagePath, rating } = this.props.movie; // Funciona
-    const { title, subtitle, storyline, imagePath, rating } = this.props.movie;
+    // const { title, subtitle, storyline, imagePath, rating } = this.props.movie; // Funciona parcilmente
+    const { movie: { title, subtitle, storyline, imagePath, rating } } = this.props; // testando
 
     return (
       <div>
@@ -51,16 +51,24 @@ class MovieCard extends React.Component {
 // };
 
 MovieCard.defaultProps = {
-  movie: { title: 'Stranger',
-    subtitle: 'Stranger',
-    storyline: 'Stranger',
-    rating: 'Stranger' },
+  movie: {},
 };
+
+// Que tava com "this.props.movie" // Só tinha 1 erro no ESlint
+
+// MovieCard.defaultProps = {
+//   movie: { title: 'Stranger',
+//     subtitle: 'Stranger',
+//     storyline: 'Stranger',
+//     imagePath: 'Stranger',
+//     rating: 1 },
+// };
 
 MovieCard.propTypes = {
   movie: PropTypes.arrayOf(PropTypes.shape({ title: PropTypes.string,
     subtitle: PropTypes.string,
     storyline: PropTypes.string,
+    imagePath: PropTypes.string,
     rating: PropTypes.number })),
 };
 
