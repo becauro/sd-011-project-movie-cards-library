@@ -5,8 +5,19 @@ import MovieCard from './MovieCard';
 class MovieList extends React.Component {
   render() {
     const { movies } = this.props;
-    return movies.map((movie) => (<MovieCard movie={ movie } key={ movie.title } />));
+    return (
+      <div>
+        {movies.map((movie, i) => (
+          <MovieCard key={ `Movie Title ${i + 1}` } movie={ movie } />))}
+        ;
+      </div>
+    );
   }
 }
+
+MovieList.propTypes = {
+  movies: PropTypes.arrayOf(PropTypes.arrayOf).isRequired,
+};
+// Fonte: https://reactjs.org/docs/typechecking-with-proptypes.html
 
 export default MovieList;
