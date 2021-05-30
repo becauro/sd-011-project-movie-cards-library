@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import Movies from './data';
 import Header from './components/Header';
-// import MovieCard '../MovieCard.jsx';
 import MovieList from './components/MovieList';
 
 function App() {
