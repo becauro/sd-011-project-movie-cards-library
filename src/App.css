@@ -13,7 +13,7 @@ body {
 }
 
 .page-title {
-  color:  snow;
+  color: snow;
   font-size: 28px;
   font-weight: 500;
   text-align: center;
@@ -28,8 +28,8 @@ body {
 .movie-card {
   background-color: rgb(196, 162, 196);
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-width: 2.5px;
   border-color: cornsilk;
+  border-width: 2.5px;
   border-radius: 3px;
   display: flex;
   flex-direction: column;
