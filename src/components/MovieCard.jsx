@@ -8,8 +8,8 @@ class MovieCard extends React.Component {
     return (
       <div className="movieCard">
         <img src={ imagePath } alt="poster" />
-        <p>{ title }</p>
-        <p>{ subtitle }</p>
+        <h4>{ title }</h4>
+        <h5>{ subtitle }</h5>
         <p>{ storyline }</p>
         <div>
           <div>
