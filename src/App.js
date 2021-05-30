@@ -3,7 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import MovieList from './components/MovieList';
 import array from './data'; // Acredito que o mais  correto seria importar como "movies". Se tivesse mais de dois arrays exportados, darai treta.
-
+// Oi, tudo bem ? Bye
 function App() {
   // [PODERIA passar para a prop de MovieList um outro Array, como o do exemplo criado abaixo]
 
