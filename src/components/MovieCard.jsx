@@ -5,9 +5,11 @@ import Rating from './Rating';
 
 class MovieCard extends React.Component {
   render() {
-    // const { title, subtitle, storyline, imagePath, rating } = this.props.movie; // Funciona parcilmente
-    const { movie: { title, subtitle, storyline, imagePath, rating } } = this.props; // testando
+    /* prop ("movie") que recebe dados de um objeto passado pelo componente pai.
+    Isso é pra ser usado para retornar elementos com esses dados para quem o chamar; inclusive o pŕopio pai */
+    const { movie: { title, subtitle, storyline, imagePath, rating } } = this.props;
 
+    /* Rating é renderizado e retorna elementos com dados recebidos pela sua daqui */
     return (
       <div>
         <h4>{ title }</h4>
@@ -19,57 +21,27 @@ class MovieCard extends React.Component {
     );
   }
 }
-
+// [Outra forma (não verbosa) de fazer]
 // MovieCard.defaultProps = {
-//   title: 'Stranger',
-//   subtitle: 'Stranger',
-//   storyline: 'Stranger',
-//   rating: 'Stranger',
+//   movie: {},
 // };
-
-// MovieCard.propTypes = {
-//   title: PropTypes.string,
-//   subtitle: PropTypes.string,
-//   storyline: PropTypes.string,
-//   rating: PropTypes.number,
-// };
-
-/// Outra forma (Essa que tava):
-
-// MovieCard.defaultProps = {
-//   movie: { title: 'Stranger',
-//     subtitle: 'Stranger',
-//     storyline: 'Stranger',
-//     rating: 'Stranger' },
-// };
-
-// MovieCard.propTypes = {
-//   movie: { title: PropTypes.string,
-//     subtitle: PropTypes.string,
-//     storyline: PropTypes.string,
-//     rating: PropTypes.number },
-// };
-
-MovieCard.defaultProps = {
-  movie: {},
-};
 
 // Que tava com "this.props.movie" // Só tinha 1 erro no ESlint
 
-// MovieCard.defaultProps = {
-//   movie: { title: 'Stranger',
-//     subtitle: 'Stranger',
-//     storyline: 'Stranger',
-//     imagePath: 'Stranger',
-//     rating: 1 },
-// };
+MovieCard.defaultProps = {
+  movie: { title: 'Stranger',
+    subtitle: 'Stranger',
+    storyline: 'Stranger',
+    imagePath: 'Stranger',
+    rating: 1 },
+};
 
 MovieCard.propTypes = {
-  movie: PropTypes.arrayOf(PropTypes.shape({ title: PropTypes.string,
+  movie: PropTypes.shape({ title: PropTypes.string,
     subtitle: PropTypes.string,
     storyline: PropTypes.string,
     imagePath: PropTypes.string,
-    rating: PropTypes.number })),
+    rating: PropTypes.number }),
 };
 
 export default MovieCard;

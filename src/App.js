@@ -1,31 +1,23 @@
 import React from 'react';
 import './App.css';
 import Header from './components/Header';
-// import MovieCard from './components/MovieCard';
 import MovieList from './components/MovieList';
-// import Rating from './components/Rating';
+import array from './data'; // Acredito que o mais  correto seria importar como "movies". Se tivesse mais de dois arrays exportados, darai treta.
 
 function App() {
-  const array = [
-    { title: 'Appleseed Alpha',
-      imagePath: '../../public/images/Appleseed_Alpha.jpg',
-      rating: 5 },
-    { title: 'Final Fantasy Spirits Within',
-      imagePath: '../public/images/Final_Fantasy_Spirits_Within.jpg',
-      rating: 7 },
-    { title: 'Ghost In The Shell 2_0',
-      imagePath: '../public/images/Ghost_In_The_Shell_2_0.jpg',
-      rating: 6 },
-    { title: 'Kingsglaive Final Fantasy XV',
-      imagePath: '../public/images/Kingsglaive_Final_Fantasy_XV.jpg',
-      rating: 8 },
-    { title: 'Resident Evil Vendetta',
-      imagePath: '../public/images/public/images/Resident_Evil_Vendetta.jpg',
-      rating: 2 },
-  ];
+  // [PODERIA passar para a prop de MovieList um outro Array, como o do exemplo criado abaixo]
 
-  // {products.map((item) => (<Order order={item} />))}
+  // const array = [
+  //   { title: 'Appleseed Alpha',
+  //     imagePath: 'images/Appleseed_Alpha.jpg', // ACHO que começa por imagens/ porque é sob a pespectiva do caminho a partir do arquivo public/index.html
+  //     rating: 5 },
+  //   { title: 'Final Fantasy Spirits Within',
+  //     imagePath: '../public/images/Final_Fantasy_Spirits_Within.jpg',
+  //     rating: 7 },
+  // ];
 
+  // Abaixo (dentro de return), também temos um componente filho que recebe dados de um array via props "movies".
+  // Ao mesmo tempo o componente filho (MovieList) é renderizado.
   return (
     <div className="App">
       {/* Sua implementação deve ficar aqui. Remova essas duas linhas e mão na massa */}
