@@ -11,7 +11,7 @@ function App() {
       {/* Sua implementação deve ficar aqui. Remova essas duas linhas e mão na massa */}
       Hora de codar! 🚀✍️👨‍💻👩‍💻💪
       <Header />
-      <MovieList movies={ Movies[0] } />
+      <MovieList movies={ Movies } />
     </div>
   );
 }

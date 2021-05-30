@@ -6,11 +6,13 @@ import movies from '../data';
 class MovieList extends React.Component {
   render() {
     const { title, subtitle, storyLine, rating, imagePath } = this.props.movies;
-
     return (
-    <div>
-      Título: {title} - Sub-Título: {subtitle} - Sinopse: {storyLine} - Nota: {rating} - Card: {imagePath}
-    </div>);
+      <div>
+        { movies.map((item) => (
+          <p>{ item.title }</p>
+        )) }
+      </div>
+    );
   }
 }
 export default MovieList;
