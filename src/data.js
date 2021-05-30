@@ -9,6 +9,20 @@ const movies = [
     imagePath: 'images/Without_Remorse.jpg',
   },
   {
+    title: "At World's End",
+    subtitle: 'Pirates of the Caribbean',
+    storyline: 'Captain Barbossa, Will Turner and Elizabeth Swann must sail off the edge of the map, navigate treachery and betrayal, find Jack Sparrow, and make their final alliances for one last decisive battle.',
+    rating: 4,
+    imagePath: 'images/Pirates_of_the_Caribbean.jpg',
+  },
+  {
+    title: 'The Hunger Games',
+    subtitle: 'Hope -The End',
+    storyline: 'Katniss Everdeen e seus aliados lançam um ataque ao Capitólio para tentar libertar Panem e assassinar o presidente Snow.',
+    rating: 5,
+    imagePath: 'images/The_Hunger_Games.jpg',
+  },
+  {
     title: 'Kingsglaive',
     subtitle: 'Final Fantasy XV',
     storyline: 'King Regis, who oversees the land of Lucis, commands his army of soldiers to protect the kingdom from the Niflheim empire\'s plans to steal the sacred crystal.',
