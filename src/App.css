@@ -29,8 +29,8 @@ body {
   background-color: rgb(196, 162, 196);
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-color: cornsilk;
-  border-width: 2.5px;
   border-radius: 3px;
+  border-width: 2.5px;
   display: flex;
   flex-direction: column;
   height: 450px;
