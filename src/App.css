@@ -5,15 +5,15 @@ body {
 }
 
 .movie-card-header {
-  margin-top: 0;
-  top: 0;
   align-items: center;
-  width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
-  position: fixed;
   display: flex;
   height: 100px;
   justify-content: center;
+  position: fixed;
+  margin-top: 0;
+  top: 0;  
+  width: 100%;
 }
 
 .page-title {
