@@ -2,6 +2,13 @@
 
 const movies = [
   {
+    title: 'Without Remorse',
+    subtitle: 'From the Author of Raibow Six',
+    storyline: 'Kelly must fight without any remorse against his enemies if he wants to avoid disaster and expose the powerful figures behind the conspiracy.',
+    rating: 5,
+    imagePath: 'images/Without_Remorse.jpg',
+  },
+  {
     title: 'Kingsglaive',
     subtitle: 'Final Fantasy XV',
     storyline: 'King Regis, who oversees the land of Lucis, commands his army of soldiers to protect the kingdom from the Niflheim empire\'s plans to steal the sacred crystal.',
