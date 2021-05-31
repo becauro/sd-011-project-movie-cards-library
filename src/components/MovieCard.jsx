@@ -34,11 +34,13 @@ MovieCard.propTypes = {
 };
 
 MovieCard.defaultProps = {
-  imagePath: 'Image undefined',
-  title: 'Title undefined',
-  subtitle: 'Subtitle undefined',
-  storyline: 'Storyline undefined',
-  rating: null,
+  movie: PropTypes.shape({
+    imagePath: 'Image undefined',
+    title: 'Title undefined',
+    subtitle: 'Subtitle undefined',
+    storyline: 'Storyline undefined',
+    rating: null,
+  }),
 };
 
 export default MovieCard;
