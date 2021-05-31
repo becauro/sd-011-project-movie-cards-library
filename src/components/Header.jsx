@@ -1,9 +1,11 @@
-import React, { components } from 'react';
+import React, { Component } from 'react';
 
-class Header extends components {
+class Header extends Component {
   render() {
     return (
-      <h1> Movie Cards Library </h1>
+      <header>
+        <h1>Movie Cards Library</h1>
+      </header>
     );
   }
 }
