@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import MovieCard from './MovieCard';
 
 function MovieList({ movies }) {
-  console.log(movies);
+  // console.log(movies);
   return (
     <div>
       {movies.map((movie) => <MovieCard movie={ movie } key={ movie.title } />)}
