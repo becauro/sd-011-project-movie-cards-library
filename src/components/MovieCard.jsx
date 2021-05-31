@@ -1,18 +1,16 @@
-// implement MovieCard component here
-import React from 'react';
-import PropTypes from 'prop-types';
+// implement MovieList component here
+import React, { Component } from 'react';
+// import PropTypes from 'prop-types';
 
-class MovieCard extends React.Component {
+class MovieCard extends Component {
   render() {
-    const { movie } = this.props;
+    // const { movie } = this.props;
+    // const { title, subtitle, storyline, imagePath, rating } = movie;
+
     return (
-      <li>
-        {movie}
-      </li>
+      <li />
     );
   }
 }
-MovieCard.propTypes = {
-  movie: PropTypes.objectOf(PropTypes.string).isRequired,
-};
+
 export default MovieCard;
