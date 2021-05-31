@@ -8,7 +8,7 @@ import MovieCard from './components/MovieCard';
 class App extends React.Component {
   render() {
     return (
-      <div>
+      <div className="App">
         <Header />
         <MovieList movie={ Data } />
         <MovieCard />
