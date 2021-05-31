@@ -81,3 +81,9 @@ body {
   justify-content: flex-end;
   padding: 12px 20px;
 }
+
+.hero-header {
+  background-color: #343a40;
+  margin-top: -20px;
+  padding: 15px;
+}
