@@ -7,9 +7,9 @@ class MovieC extends React.Component {
     const { movie: { title, subtitle, storyline, rating, imagePath } } = this.props;
     return (
       <div>
-        <h1>
+        <h4>
           { title }
-        </h1>
+        </h4>
         <h5>
           { subtitle }
         </h5>
