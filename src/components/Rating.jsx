@@ -8,7 +8,7 @@ class Rating extends React.Component {
       <div className="rating">
         {rating}
       </div>
-    );
+    )
   }
 }
 Rating.propTypes = {
