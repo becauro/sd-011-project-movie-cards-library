@@ -7,6 +7,7 @@
 // https://www.digitalocean.com/community/tutorials/how-to-customize-react-components
 // -with-props-pt#:~:text=Adicionando%20props,depois%20em%20seu%20componente%20AnimalCard%20.
 // https://app.betrybe.com/course/live-lectures/sd-cohort-7#aula-112-react-componentes-react
+// https://app.betrybe.com/course/live-lectures/sd-cohort-8#plantao-especial-proptypes
 
 import React from 'react';
 import PropTypes from 'prop-types';
