@@ -4,9 +4,14 @@ import MovieCard from './MovieCard'
 
 class Rating extends React.Component {
   render() {
-      <MovieCard Rating = {movies.Rating}/>
-
+    const { rating } = this.props
+    return (
+      <div className='rating'>
+        {rating}
+      </div>
+    )
   }
+  
 }
 
 export default Rating;
