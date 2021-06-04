@@ -18,3 +18,4 @@ export default MovieList;
 MovieList.propTypes = {
   movies: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
+// teste
