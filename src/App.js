@@ -1,10 +1,15 @@
 import React from 'react';
 import Header from './components/Header';
+import MovieList from './components/MovieList';
+import Data from './data';
 import './App.css';
 
 function App() {
   return (
-    <Header name="Movie Cards Library" />
+    <div className>
+      <Header />
+      <MovieList movies={ Data } />
+    </div>
   );
 }
 
