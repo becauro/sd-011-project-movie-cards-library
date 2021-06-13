@@ -6,7 +6,10 @@ import movies from '../data';
 export class MovieList extends React.Component {
   render() {
     return (
-      <main>{ movies.map((movie) => <MovieCard movie={ movie } />) }</main>
+      <main>
+        {movies
+          .map((movie, index) => <MovieCard movie={ movie } key={ `movie${index}` } />) }
+      </main>
     );
   }
 }
