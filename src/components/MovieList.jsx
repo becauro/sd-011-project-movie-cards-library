@@ -1,11 +1,13 @@
 // implement MovieList component here
 import React from 'react';
-import Movies from '../data';
+import MovieCard from './MovieCard';
+import movies from '../data';
 
-class MovieList extends React.Component {
+export class MovieList extends React.Component {
   render() {
-    const { movies } = Movies;
-    return <ol></ol>;
+    return (
+      <main>{ movies.map((movie) => <MovieCard movie={ movie } />) }</main>
+    );
   }
 }
 
