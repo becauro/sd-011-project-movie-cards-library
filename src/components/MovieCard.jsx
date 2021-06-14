@@ -15,7 +15,7 @@ class MovieCard extends Component {
 }
 
 MovieCard.propTypes = {
-  movie: PropTypes.shape({
+  movie: propTypes.shape({
     imagePath: propTypes.string,
   }).isRequired,
 };
