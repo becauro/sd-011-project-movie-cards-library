@@ -1,7 +1,7 @@
-import React from 'react';
-
 // 1 - Crie um componente <Header />
 // 2 - Renderize um texto no <Header /> (dentro de uma tag h1)
+
+import React from 'react';
 
 class Header extends React.Component {
   render() {
