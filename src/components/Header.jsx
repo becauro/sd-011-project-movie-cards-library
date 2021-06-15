@@ -1,5 +1,5 @@
 // 1 - Crie um componente <Header />
-// 2 - Renderize um texto no <Header /> (dentro de uma tag h1)
+// 2 - Renderize um texto no <Header />
 
 import React from 'react';
 

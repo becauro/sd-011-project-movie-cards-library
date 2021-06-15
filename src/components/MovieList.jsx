@@ -1,6 +1,6 @@
 // 3 - Crie um componente <MovieList />
 // 4 - Renderize componentes <MovieCard /> dentro de <MovieList />
-// 5 - Passe uma key para cada <MovieCard /> renderizado (utilizar a função map) e cada componente <MovieCard /> deve receber uma prop key
+// 5 - Passe uma key para cada <MovieCard /> renderizado
 
 import React from 'react';
 import PropTypes from 'prop-types';
