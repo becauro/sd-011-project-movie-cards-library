@@ -11,3 +11,5 @@ class Header extends React.Component {
 }
 
 export default Header;
+
+// Source: consulta ao repositório https://github.com/tryber/sd-011-project-movie-cards-library/pull/185/

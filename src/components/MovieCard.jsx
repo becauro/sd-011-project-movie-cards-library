@@ -28,3 +28,5 @@ MovieCard.propTypes = {
 };
 
 export default MovieCard;
+
+// Source: consulta ao repositório https://github.com/tryber/sd-011-project-movie-cards-library/pull/185/

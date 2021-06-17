@@ -13,3 +13,5 @@ Rating.propTypes = {
 };
 
 export default Rating;
+
+// Source: consulta ao repositório https://github.com/tryber/sd-011-project-movie-cards-library/pull/185/
