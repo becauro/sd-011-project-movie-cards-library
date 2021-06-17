@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 
 class Rating extends Component {
   render() {
+    const rating = 3;
     return (
-      <div>
-        a
-      </div>
+      <h1 className="rating">
+        { rating }
+      </h1>
     );
   }
 }
