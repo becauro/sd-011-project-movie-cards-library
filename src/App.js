@@ -1,9 +1,7 @@
-import { ReactComponent } from '*.svg';
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import Header from './components/Header';
 import MovieList from './components/MovieList';
-import MovieCard from './components/MovieCard';
 
 class App extends Component {
   render() {
@@ -12,9 +10,8 @@ class App extends Component {
         <Header />
         <MovieList movies={ movies } />
       </div>
-      );
+    );
   }
 }
-
 
 export default App;
